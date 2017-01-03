@@ -13,3 +13,9 @@
   border-bottom: 1px solid #dbdbdb;
   
 }
+.slideshow img.carousel-img {
+	text-align: center;
+	height: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+}
