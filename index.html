@@ -59,17 +59,26 @@
         <!-- Navbar links that will be collapsed -->
         <div class="collapse navbar-collapse" id="btn-collapse-1">
           <ul class="nav navbar-nav pull-left">
-            <li class="active">
-              <a href="#" id="home"><span class="sr-only">(current)</span>Home</a>
+            <li class="active" id="home">
+              <a href="#"><span class="sr-only">(current)</span>Home</a>
             </li>
-            <li>
-              <a href="#" id="about-me">About me</a>
+            <li id="about-me">
+              <a href="#">About me</a>
             </li>
-            <li>
-              <a href="#" id="contact-me">Contact me</a>
+            <li id="my-projects" class="dropdown">
+              <a href="#" class="dropdown-toggle" id="ddMprojects" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">My projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledly="ddMprojects">
+                <li id="webprojects"><a href="#">Web Design</a></li>
+                <li class="divider" role="separator"></li>
+                <li id="gameprojects"><a href="#">Game Design</a></li>
+              </ul>
+            </li>
+            <li id="contact-me">
+              <a href="#">Contact me</a>
             </li>
           </ul><!-- / Main navbar links -->
-          <!-- Social icons together It's hidden now-->
+
+          <!-- Social icons together It's hidden now
           <ul class="nav navbar-nav pull-right hidden">
             <li>
               <a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></a>
@@ -80,7 +89,7 @@
             <li>
               <a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
             </li>
-          </ul><!-- / Social Icons menu-->
+          </ul> / Social Icons menu-->
       </div>
     </div>
   </nav><!-- / End of navbar -->
@@ -99,12 +108,11 @@
    <!-- This template will show a slideshow by looking for images inside of my gallery
         file js, that I've created
     -->
-    <script id="slideshow-template" type="text/x-handlebars-template">
+    <!-- Home template -->
+    <script id="home-template" type="text/x-handlebars-template">
       <div class="row slideshow">
         <div class="col-xs-12 col-md-12">
-
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
             <ol class="carousel-indicators">
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
               <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -113,7 +121,6 @@
               <li data-target="#carousel-example-generic" data-slide-to="4"></li>
               <li data-target="#carousel-example-generic" data-slide-to="5"></li>
             </ol>
-
       
            <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
@@ -145,6 +152,8 @@
     </div> <!-- / row -->
 
     <div class="row">
+
+    {{#each section2}}
       <div class="col-xs-12 col-md-12 text-center">
         <h1 class="text-primary">{{title1}}</h1>
         <p>{{content1}}</p>
@@ -156,81 +165,102 @@
         {{{bob}}}
       </div>
     </div>
+    {{/each}}
 
-    <div class="row center-block">
-      <div class="col-xs-12 col-md-offset-2 col-md-4">
-        <div class="">Title</div>
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-          <li>Item 4</li>
-        </ul>
+    <p>&nbsp;</p>
+    <div class="row">
+      {{#each skillNqualification}}
+      <div class="col-xs-12 {{adjclass}} col-md-4">
+        <div class="panel panel-{{panelClass}}">
+          <div class="panel-heading">
+            <h3>{{title}}</h3>
+          </div>
+          <div class="panel-body">
+            <p>{{Description}}</p>
+          </div>
+          <!-- List group -->
+          <ul class="list-group">
+            <li class="list-group-item"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> {{skill1}}</li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> {{skill2}}</li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> {{skill3}}</li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> {{skill4}}</li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> {{skill5}}</li>
+          </ul>
+        </div>
       </div>
-      <div class="col-xs-12 col-md-offset-2 col-md-4">
-        <div class="">Title</div>
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-          <li>Item 4</li>
-        </ul>
+      {{/each}}
+
+    </div>
+    </script><!-- / Home template -->
+
+    <!-- About me template -->
+    <script id="about-me-template" type="text/x-handlebars-template">
+      <div class="row">
+        <div class="col-xs-12 col-md-12 text-center">
+          <h1>About me</h1>
+        </div>
       </div>
-    </div>
-    </script>
+    </script><!-- / About me template -->
 
-  <!-- this is the template for the slideshow view of a single album -->
-<!-- 
-    It uses the carousel view, which is quite complex, see my lecture for details
+    <!-- My Projects template -->
+    <script id="my-projects-template" type="text/x-handlebars-template">
+      <div class="row">
+        <div class="col-xs-12 col-md-12 text-center">
+          <h1>My Projects</h1>
+        </div>
+      </div>
+    </script><!-- / My projects template -->
 
-<script id="home-template" type="text/x-handlebars-template">
-  <div class="row">
-    <div class="col-xs-12 col-md-12 text-center">
-      <h1 class="text-primary">{{title1}}</h1>
-      <p>{{content1}}</p>
-      <p>{{content2}}</p>
-      <h2 class="text-info">{{title2}}</h2>
-      <p>{{content3}}</p>
-      <a href="#" class="btn btn-primary">Projects</a>
-      <a href="#" class="btn btn-default">Contact me</a>
-      {{{bob}}}
-    </div>
-  </div>
-</script>-->
-
+    <!-- Contact me template -->
+    <script id="contact-me-template" type="text/x-handlebars-template">
+      <div class="row">
+        <div class="col-xs-12 col-md-12 text-center">
+          <h1>Contact me</h1>
+        </div>
+      </div>
+    </script><!-- / Contact me template -->
+<!--
+  This script will be filled the blank spots in html above
+-->
 <script type="text/javascript">    
 
-var html, source, slideshow_template, home_template;
+var html, source, home_template, about_me_template, contact_me_template, my_projects_template;
 
 function showTemplate(template, data){
   html    = template(data);
   $('#content').html(html);
 }
 
-    /* source1 = $("#home-template").html();
-    home_template = Handlebars.compile(source1); */
+    source = $("#home-template").html();
+    home_template = Handlebars.compile(source);
 
-    source2 = $("#slideshow-template").html();
-    slideshow_template = Handlebars.compile(source2);
+    source = $("#about-me-template").html();
+    about_me_template = Handlebars.compile(source);
 
+    source = $("#my-projects-template").html();
+    my_projects_template = Handlebars.compile(source);
+
+    source = $("#contact-me-template").html();
+    contact_me_template = Handlebars.compile(source);
 
     // define the data for the template
     // we define an objects which contains an
     // array of other objects. This array will be used
     // to create multiple images
-    var data = {images:[
+    var data = {
+      images:[
          {
-       src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Shopping_Center_Magna_Plaza_Amsterdam_2014.jpg/600px-Shopping_Center_Magna_Plaza_Amsterdam_2014.jpg",
+           src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Shopping_Center_Magna_Plaza_Amsterdam_2014.jpg/600px-Shopping_Center_Magna_Plaza_Amsterdam_2014.jpg",
            title: "Shopping Center Magna Plaza Amsterdam 2014",
            author: "Tuxyso",
            },
          {
-       src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/600px-The_Earth_seen_from_Apollo_17.jpg", 
+           src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/600px-The_Earth_seen_from_Apollo_17.jpg", 
            title:"The Earth seen from Apollo 17",
            author:"Ed g2s"
            },
          {
-       src:"https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Barnard_33.jpg/300px-Barnard_33.jpg",
+           src:"https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Barnard_33.jpg/300px-Barnard_33.jpg",
            title: "horse nebula",
            author: "John Smith",
            },
@@ -240,31 +270,96 @@ function showTemplate(template, data){
            author:"Another author",
         },
          {
-       src:"http://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Lijiang_Yunnan_China-Naxi-people-carrying-baskets-01.jpg/300px-Lijiang_Yunnan_China-Naxi-people-carrying-baskets-01.jpg",
+           src:"http://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Lijiang_Yunnan_China-Naxi-people-carrying-baskets-01.jpg/300px-Lijiang_Yunnan_China-Naxi-people-carrying-baskets-01.jpg",
            title:"Lijiang Yunnan China Naxi people carrying baskets-",
            author:"Wikimedia Commons",
            },
          {
-       src:"http://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Stift_G%C3%B6ttweig_Gobelinzimmer_01.JPG/300px-Stift_G%C3%B6ttweig_Gobelinzimmer_01.JPG",
+           src:"http://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Stift_G%C3%B6ttweig_Gobelinzimmer_01.JPG/300px-Stift_G%C3%B6ttweig_Gobelinzimmer_01.JPG",
            title:"Marco's house",
            author:"Wikimedia Commons",
            },
 
          ],
-       "title1":"Welcome to my online Portfolio!",
-      "content1":"Here you will find some works I've made in the past, some works I'm producing and some works in my schedule.",
-      "content2":"I hope you enjoy!",
-      "title2":"Latest projects",
-      "content3":"Check my recent projects",
-      "bob":"<a href='http://www.google.ie' target='_blank' class='btn btn-success btn-lg'>Bob</a>"
+      section2:[
+         {
+          title1:"Welcome to my online Portfolio!",
+          content1:"Here you will find some works I've made in the past, some works I'm producing and some works in my schedule.",
+          content2:"I hope you enjoy!",
+          title2:"Latest projects",
+          content3:"Check my recent projects",
+          },
+        ],
+      skillNqualification: [
+        {
+          panelClass: "primary",
+          adjclass: "col-md-offset-2",
+          title: "Skills",
+          description: "Skill description here",
+          skill1: "HTML5",
+          skill2: "CSS3",
+          skill3: "Javascript / Jquery",
+          skill4: "Handlebars template",
+          skill5: "Photoshop",
+        },
+        {
+          panelClass: "primary",
+          adjclass: "",
+          title: "Qualification",
+          description: "Qualification description here",
+          skill1: "IT Degree",
+          skill2: "Certificate in Computer Graphics focused on Game Design",
+          skill3: "Certificate in Development using HTM5, CSS3 and javascript by KaSolution",
+          skill4: "Certificate Web Design by Coursera course",
+          skill5: "Certificate in Jquery by CodeSchool",
+        }
+      ],
+      qualification: [
+        {
+
+        }
+      ]
     };
 
-    $(document).ready(
-      function(){
-        showTemplate(slideshow_template, data);
+    $(document).ready(showTemplate(home_template, data));
+    /* This script will change the active class in the navbar accordingly where you click
+    ------------------------------------------------------------------------------------*/
+    $("#home").click(function(){
+
+      showTemplate(home_template, data);
+
+      $(".navbar .active").removeClass("active");
+      $("#home").addClass("active");
+
+      });
+
+    $("#about-me").click(function(){
+
+      showTemplate(about_me_template, data);
+
+      $(".navbar .active").removeClass("active");
+      $("#about-me").addClass("active");
+
     });
-   /* var html = template(content);
-     $('#content').html(html); */
+
+    $("#webprojects, #gameprojects").click(function(){
+        
+        showTemplate(my_projects_template, data);
+
+        $(".navbar .active").removeClass("active");
+        $("#my-projects").addClass("active");
+      });
+
+    $("#contact-me").click(function(){
+
+      showTemplate(contact_me_template, data);
+
+      $(".navbar .active").removeClass("active");
+      $("#contact-me").addClass("active");
+
+    });
+    /* END Script to change navbar
+    ------------------------------------------------------------------------------------*/
 
 </script>
   </body>
