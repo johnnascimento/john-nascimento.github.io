@@ -21,6 +21,13 @@ body{
 	margin: 0 auto;
 	overflow: hidden;
 }
+.center-cropped {
+	width: 100%;
+	background-size: cover;
+	height: 300px !important;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
 #skillNqualification .img-thumbnail{
 	padding:40px;
 }
