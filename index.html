@@ -377,12 +377,6 @@
 
   $(document).ready(function(){
     
-    showTemplate(home_template, data)
-
-    $("ol.breadcrumb").append(breadcrumb_bar.home);
-
-  });
-
   /* This script will change the active class in the navbar accordingly where you click
   ------------------------------------------------------------------------------------*/
   $("#home").click(function(){
@@ -448,6 +442,9 @@
   /* END Script to change navbar
   ------------------------------------------------------------------------------------*/
 
+  $("#home").click();
+
+});
 </script>
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
