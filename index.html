@@ -61,21 +61,21 @@
         <!-- Navbar links that will be collapsed -->
         <div class="collapse navbar-collapse" id="btn-collapse-1">
           <ul class="nav navbar-nav pull-left">
-            <li class="active" id="home">
+            <li class="active home" id="home">
               <a href="#"><span class="sr-only">(current)</span>Home</a>
             </li>
-            <li id="about-me">
+            <li class="about-me" id="about-me">
               <a href="#">About me</a>
             </li>
-            <li id="my-projects" class="dropdown">
+            <li id="my-projects" class="my-projects dropdown">
               <a href="#" class="dropdown-toggle" id="ddMprojects" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">My projects<span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledly="ddMprojects">
-                <li id="webprojects"><a href="#">Web Design</a></li>
+                <li class="webprojects" id="webprojects"><a href="#">Web Design</a></li>
                 <li class="divider" role="separator"></li>
-                <li id="gameprojects"><a href="#">Game Design</a></li>
+                <li class="gameprojects" id="gameprojects"><a href="#">Game Design</a></li>
               </ul>
             </li>
-            <li id="contact-me">
+            <li  class="contact-me" id="contact-me">
               <a href="#">Contact me</a>
             </li>
           </ul><!-- / Main navbar links -->
@@ -353,6 +353,7 @@
   // variables to store the current displayed album and photo
   var current_album = gallery.albums[0];
   var current_photo = current_album.photos[0];
+  var breadcrumb_data = data.breadcrumb_bar[0];
 
   function showTemplate(template, data){
     html    = template(data);
@@ -379,37 +380,49 @@
     
   /* This script will change the active class in the navbar accordingly where you click
   ------------------------------------------------------------------------------------*/
-  $("#home").click(function(){
+
+  $(".home").click(function(){
 
     showTemplate(home_template, data);
 
     $(".navbar .active").removeClass("active");
-    $("#home").addClass("active");
+    $(".home").addClass("active");
 
-    $("ol.breadcrumb").append(breadcrumb_bar.home);
+    $("ol.breadcrumb").append(breadcrumb_data.home);
 
     });
 
-  $("#about-me").click(function(){
+  $(".about-me").click(function(){
 
     showTemplate(about_me_template, data);
 
     $(".navbar .active").removeClass("active");
-    $("#about-me").addClass("active");
+    $(".about-me").addClass("active");
 
-    $("ol.breadcrumb").append(breadcrumb_bar.home + breadcrumb_bar.aboutme);
-    $("ol.breadcrumb").find("#bread-home").html('<a href="#">Home</a>');
+    $("ol.breadcrumb").append(breadcrumb_data.home + breadcrumb_data.aboutme);
+    $("ol.breadcrumb").find("#bread-home").html('<a href="#" class="home">Home</a>');
 
+      $(".home").click(function(){
+
+      showTemplate(home_template, data);
+
+      $(".navbar .active").removeClass("active");
+      $(".home").addClass("active");
+
+      $("ol.breadcrumb").append(breadcrumb_data.home);
+
+      });
+      
   });
 
-  $("#webprojects, #gameprojects").click(function(){
+  $(".webprojects, .gameprojects").click(function(){
       
       showTemplate(my_projects_template, gallery);
 
       $(".navbar .active").removeClass("active");
-      $("#my-projects").addClass("active");
+      $(".my-projects").addClass("active");
 
-      $("ol.breadcrumb").append(breadcrumb_bar.home + breadcrumb_bar.aboutme + breadcrumb_bar.myprojects);
+      $("ol.breadcrumb").append(breadcrumb_data.home + breadcrumb_data.aboutme + breadcrumb_data.myprojects);
 
       $(".album-thumbnail").click(function(){
         // get the index (position in the array)
@@ -427,22 +440,127 @@
         showTemplate(photo_template, current_album);
 
       });
+
+      $("ol.breadcrumb").find("#bread-home").html('<a href="#" class="home">Home</a>');
+      $("ol.breadcrumb").find("#bread-aboutme").html('<a href="#" class="about-me">About me</a>');
+
+        $(".home").click(function(){
+
+        showTemplate(home_template, data);
+
+        $(".navbar .active").removeClass("active");
+        $(".home").addClass("active");
+
+        $("ol.breadcrumb").append(breadcrumb_data.home);
+
+        });
+
+        $(".about-me").click(function(){
+
+          showTemplate(about_me_template, data);
+
+          $(".navbar .active").removeClass("active");
+          $(".about-me").addClass("active");
+
+          $("ol.breadcrumb").append(breadcrumb_data.home + breadcrumb_data.aboutme);
+          $("ol.breadcrumb").find("#bread-home").html('<a href="#" class="home">Home</a>');
+
+            $(".home").click(function(){
+
+            showTemplate(home_template, data);
+
+            $(".navbar .active").removeClass("active");
+            $(".home").addClass("active");
+
+            $("ol.breadcrumb").append(breadcrumb_data.home);
+
+            });
+            
+  });
+
     });
 
-  $("#contact-me").click(function(){
+  $(".contact-me").click(function(){
 
     showTemplate(contact_me_template, data);
 
     $(".navbar .active").removeClass("active");
-    $("#contact-me").addClass("active");
+    $(".contact-me").addClass("active");
 
-    $("ol.breadcrumb").append(breadcrumb_bar.home + breadcrumb_bar.aboutme + breadcrumb_bar.myprojects + breadcrumb_bar.contactme);
+    $("ol.breadcrumb").append(breadcrumb_data.home + breadcrumb_data.aboutme + breadcrumb_data.myprojects + breadcrumb_data.contactme);
+
+      $("ol.breadcrumb").find("#bread-home").html('<a href="#" class="home">Home</a>');
+      $("ol.breadcrumb").find("#bread-aboutme").html('<a href="#" class="about-me">About me</a>');
+      $("ol.breadcrumb").find("#bread-webprojects").html('<a href="#" class="webprojects">My projects</a>');
+
+        $(".home").click(function(){
+
+        showTemplate(home_template, data);
+
+        $(".navbar .active").removeClass("active");
+        $(".home").addClass("active");
+
+        $("ol.breadcrumb").append(breadcrumb_data.home);
+
+        });
+
+        $(".about-me").click(function(){
+
+          showTemplate(about_me_template, data);
+
+          $(".navbar .active").removeClass("active");
+          $(".about-me").addClass("active");
+
+          $("ol.breadcrumb").append(breadcrumb_data.home + breadcrumb_data.aboutme);
+          $("ol.breadcrumb").find("#bread-home").html('<a href="#" class="home">Home</a>');
+
+            $(".home").click(function(){
+
+            showTemplate(home_template, data);
+
+            $(".navbar .active").removeClass("active");
+            $(".home").addClass("active");
+
+            $("ol.breadcrumb").append(breadcrumb_data.home);
+
+            });
+          });
+        $(".webprojects, .gameprojects").click(function(){
+            
+            showTemplate(my_projects_template, gallery);
+
+            $(".navbar .active").removeClass("active");
+            $(".my-projects").addClass("active");
+
+            $("ol.breadcrumb").append(breadcrumb_data.home + breadcrumb_data.aboutme + breadcrumb_data.myprojects);
+
+            $(".album-thumbnail").click(function(){
+              // get the index (position in the array)
+              // of the album we clicked on
+              // "this" is the element that was clicked on
+              // data("id") gets the attribute data-id
+              // (which we set to the index of the album in
+              // the array - @index)
+              var index = $(this).data("id");
+
+              // set the current album to this album
+              current_album = gallery.albums[index];
+
+              // displays the photos template
+              showTemplate(photo_template, current_album);
+
+            });
+        $("ol.breadcrumb").find("#bread-home").html('<a href="#" class="home">Home</a>');
+        $("ol.breadcrumb").find("#bread-aboutme").html('<a href="#" class="about-me">About me</a>');
+
+        /*PAREI AQUI !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+        
+          });
 
   });
   /* END Script to change navbar
   ------------------------------------------------------------------------------------*/
-
-  $("#home").click();
+  $(".home").click();
 
 });
 </script>

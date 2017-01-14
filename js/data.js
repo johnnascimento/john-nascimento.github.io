@@ -114,12 +114,13 @@
           field3: "<abbr title='Phone'>P:</abbr> +353 89 9833-946<br /><br />",
           field4: "<strong>Full Name</strong><br> <a href='mailto:#''>first.last@example.com</a>",
         },
+      ],
+      breadcrumb_bar: [
+        {
+        home: "<li id='bread-home'>Home</li>",
+        aboutme: "<li id='bread-aboutme'>About me</li>",
+        myprojects: "<li id='bread-webprojects'>My Projects</li>",
+        contactme: "<li id='bread-contactme'>Contact me</li>",
+        }
       ]
-    };
-
-    breadcrumb_bar = {
-      home: "<li id='bread-home'>Home</li>",
-      aboutme: "<li id='bread-aboutme'>About me</li>",
-      myprojects: "<li id='bread-webprojects'>My Projects</li>",
-      contactme: "<li id='bread-contactme'>Contact me</li>",
     };
