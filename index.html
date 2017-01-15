@@ -17,13 +17,12 @@
     
     <!-- 
       These are our javascript files.
-      Albums.js contains the gallery's data
-      data.js contains others template data
+      db.js contains the gallery's data
+      template_structure.js contains others template data
       gallery.js is the code
     -->
-    <script src="js/data.js"></script>
-    <script src="js/Albums.js"> </script>    
-    <!--<script src="js/gallery.js"> </script> -->
+    <script src="js/db.js"></script>
+    <script src="js/template_structure.js"></script>
 
     <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -107,7 +106,7 @@
    <!-- This template will show a slideshow by looking for images inside of my gallery
         file js, that I've created
     -->
-    <!-- Home template -->
+    <!-- ********** Home template ********** -->
     <script id="home-template" type="text/x-handlebars-template">
       <div class="row slideshow">
         <div class="col-xs-12 col-md-12">
@@ -150,15 +149,7 @@
       </div> <!-- / col -->
     </div> <!-- / row -->
 
-    <!-- Breadcrumb of the website -->
-    <div class="container-fluid text-center">
-        <ol class="breadcrumb">
-
-        </ol>
-    </div><!-- / Breadcrumb of the website -->
-
     <div class="row">
-
     {{#each section2}}
       <div class="col-xs-12 col-md-12 text-center">
         <h1 class="text-primary">{{title1}}</h1>
@@ -174,16 +165,16 @@
 
     <!-- Latest projects grid -->
     <div class="row">
-    {{#each latestprojects}}
+    {{#each albums}}
       <div class="col-xs-12 col-sm-3 col-md-3">
         <div class="thumbnail">
-          <img src="{{src}}" title="{{imgtitle}}" alt="{{imgdescription}}"/>
+          <img src="{{thumbnail}}" title="{{name}}" alt="{{description}}" class="album-thumbnail" data-id="{{@index}}"/>
            <div class="caption">
-             <h3>{{title}}</h3>
+             <h3>{{name}}</h3>
              <p>{{description}}</p>
              <p>
-              <a href="#" role="button" class="btn btn-primary btn-latestproject" data-id="{{@index}}">Read more</a>
-              <a href="#" role="button" class="btn btn-default" id="about-me">About me</a>
+              <a href="#" role="button" class="btn btn-primary btn-latestproject album-thumbnail" data-id="{{@index}}">Read more</a>
+              <a href="#" role="button" class="btn btn-default about-me">About me</a>
              </p>
            </div>
         </div>
@@ -209,7 +200,7 @@
         <h3>{{title}}</h3>
         <p>{{{description}}}</p>
         <p class="text-center">
-          <a href="#" class="btn btn-default">Read more »</a>
+          <a href="#" class="btn btn-default about-me">Read more »</a>
         </p>
       </div>
       {{/each}}
@@ -241,19 +232,10 @@
           <h1>About me</h1>
         </div>
       </div>
+    </script>
+    <!-- / ********** About me template ********** -->
 
-    <!-- Breadcrumb of the website -->
-    <div class="row">
-      <div class="container-fluid text-center">
-        <ol class="breadcrumb">
-
-        </ol>
-      </div>
-    </div><!-- / Breadcrumb of the website -->
-
-    </script><!-- / About me template -->
-
-    <!-- My Projects template -->
+    <!-- ********** My Projects template ********** -->
     <script id="my-projects-template" type="text/x-handlebars-template">
       <div class="row">
         <div class="jumbotron text-center">
@@ -263,15 +245,6 @@
             <a href="#" class="btn btn-primary">Button</a>
           </p>
         </div>
-
-        <!-- Breadcrumb of the website -->
-        <div class="row">
-          <div class="container-fluid text-center">
-            <ol class="breadcrumb">
-
-            </ol>
-          </div>
-        </div><!-- / Breadcrumb of the website -->
 
         {{#each albums}}
         <div class="col-xs-12 col-md-3"> 
@@ -288,285 +261,89 @@
         {{/each}}
       </div>
 
-    </script><!-- / My projects template -->
+    </script>
+    <!-- / ********** My projects template ********** -->
 
-    <!-- photos template -->
-    <script id="photos_template" type="text/x-handlebars-template">
+    <!-- ********** My projects' Albums template ********** -->
+    <script id="albums_template" type="text/x-handlebars-template">
     <div class="row">
       <div class="jumbotron text-center">
           <h1>XPTO Gallery</h1>
           <p>Some conent just to fill the blank</p>
       </div>
 
-      <!-- Breadcrumb of the website -->
-      <div class="row">
-        <div class="container-fluid text-center">
-          <ol class="breadcrumb">
-
-          </ol>
-        </div>
-      </div><!-- / Breadcrumb of the website -->
-
       {{#each photos}}
       <div class="col-xs-12 col-sm-6 col-md-3 text-center">
-        <div class="thumbnail photo_thumbnail" data-i="{{@index}}">
+        <div class="thumbnail single-photo-thumbnail" data-id="{{@index}}">
           <img class="center-cropped img-responsive" src="{{src}}" alt=""/>
           
           <div class="caption">
             <h3>{{title}}</h3>
             <p>{{description}}</p>
             <p>
-              <a href="#" class="btn btn-success">See this project</a>
+              <a href="#" class="btn btn-success album-thumbnail">See this project</a>
             </p>
           </div>
         </div>
       </div> <!-- / col -->
       {{/each}}
     </div> <!-- / row -->
-    </script><!-- / photos template -->
+    </script>
+    <!-- / ********** My projects' Albums template ********** -->
 
-    <!-- Contact me template -->
+    <!-- ********** Album's single photo ********** -->
+    <script id="single_photo_template" type="text/x-handlebars-template">
+    <div class="row">
+      <div class="jumbotron text-center">
+          <h1>{{title}}</h1>
+      </div>
+
+      <div class="col-xs-12 col-sm-8 col-md-7">
+        <img src="{{src}}"class="img-thumbnail img-responsive center-cropped" />
+      </div> <!-- / col -->
+
+      <div class="col-xs-12 col-sm-4 col-md-5">
+        <div class="caption">
+          <h3>{{title}}</h3>
+          <p>{{description}}</p>
+        </div>
+      </div><!-- / col -->
+    </div> <!-- / row -->
+    </script>
+    <!-- / ********** Album's single photo ********** -->
+
+    <!-- ********** Contact me template ********** -->
     <script id="contact-me-template" type="text/x-handlebars-template">
       <div class="row">
-        <div class="col-xs-12 col-md-12 text-center">
+        <div class="parallax"></div>
+        <div class="contact-me-body col-xs-12 col-sm-12 col-md-offset-2 col-md-8 text-center">
           <h1>Contact me</h1>
-        </div>
-      </div>
 
-    <!-- Breadcrumb of the contact me -->
-    <div class="row">
-      <div class="container-fluid text-center">
-        <ol class="breadcrumb">
-
-        </ol>
-      </div>
-    </div><!-- / Breadcrumb of the contact me -->
-
-    </script><!-- / Contact me template -->
-<!--
-  This script will be filled the blank spots in html above
--->
-<script type="text/javascript">    
-
-  var html, source, home_template, about_me_template, contact_me_template, my_projects_template, photo_template, breadcrumb_bar, current_album, current_photo;
-
-  // variables to store the current displayed album and photo
-  var current_album = gallery.albums[0];
-  var current_photo = current_album.photos[0];
-  var breadcrumb_data = data.breadcrumb_bar[0];
-
-  function showTemplate(template, data){
-    html    = template(data);
-    $('#content').html(html);
-  }
-
-  source = $("#home-template").html();
-  home_template = Handlebars.compile(source);
-
-  source = $("#about-me-template").html();
-  about_me_template = Handlebars.compile(source);
-
-  source = $("#my-projects-template").html();
-  my_projects_template = Handlebars.compile(source);
-
-  source = $("#photos_template").html();
-  photo_template = Handlebars.compile(source);
-
-  source = $("#contact-me-template").html();
-  contact_me_template = Handlebars.compile(source);
-
-
-  $(document).ready(function(){
-    
-  /* This script will change the active class in the navbar accordingly where you click
-  ------------------------------------------------------------------------------------*/
-
-  $(".home").click(function(){
-
-    showTemplate(home_template, data);
-
-    $(".navbar .active").removeClass("active");
-    $(".home").addClass("active");
-
-    $("ol.breadcrumb").append(breadcrumb_data.home);
-
-    });
-
-  $(".about-me").click(function(){
-
-    showTemplate(about_me_template, data);
-
-    $(".navbar .active").removeClass("active");
-    $(".about-me").addClass("active");
-
-    $("ol.breadcrumb").append(breadcrumb_data.home + breadcrumb_data.aboutme);
-    $("ol.breadcrumb").find("#bread-home").html('<a href="#" class="home">Home</a>');
-
-      $(".home").click(function(){
-
-      showTemplate(home_template, data);
-
-      $(".navbar .active").removeClass("active");
-      $(".home").addClass("active");
-
-      $("ol.breadcrumb").append(breadcrumb_data.home);
-
-      });
-      
-  });
-
-  $(".webprojects, .gameprojects").click(function(){
-      
-      showTemplate(my_projects_template, gallery);
-
-      $(".navbar .active").removeClass("active");
-      $(".my-projects").addClass("active");
-
-      $("ol.breadcrumb").append(breadcrumb_data.home + breadcrumb_data.aboutme + breadcrumb_data.myprojects);
-
-      $(".album-thumbnail").click(function(){
-        // get the index (position in the array)
-        // of the album we clicked on
-        // "this" is the element that was clicked on
-        // data("id") gets the attribute data-id
-        // (which we set to the index of the album in
-        // the array - @index)
-        var index = $(this).data("id");
-
-        // set the current album to this album
-        current_album = gallery.albums[index];
-
-        // displays the photos template
-        showTemplate(photo_template, current_album);
-
-      });
-
-      $("ol.breadcrumb").find("#bread-home").html('<a href="#" class="home">Home</a>');
-      $("ol.breadcrumb").find("#bread-aboutme").html('<a href="#" class="about-me">About me</a>');
-
-        $(".home").click(function(){
-
-        showTemplate(home_template, data);
-
-        $(".navbar .active").removeClass("active");
-        $(".home").addClass("active");
-
-        $("ol.breadcrumb").append(breadcrumb_data.home);
-
-        });
-
-        $(".about-me").click(function(){
-
-          showTemplate(about_me_template, data);
-
-          $(".navbar .active").removeClass("active");
-          $(".about-me").addClass("active");
-
-          $("ol.breadcrumb").append(breadcrumb_data.home + breadcrumb_data.aboutme);
-          $("ol.breadcrumb").find("#bread-home").html('<a href="#" class="home">Home</a>');
-
-            $(".home").click(function(){
-
-            showTemplate(home_template, data);
-
-            $(".navbar .active").removeClass("active");
-            $(".home").addClass("active");
-
-            $("ol.breadcrumb").append(breadcrumb_data.home);
-
-            });
-            
-  });
-
-    });
-
-  $(".contact-me").click(function(){
-
-    showTemplate(contact_me_template, data);
-
-    $(".navbar .active").removeClass("active");
-    $(".contact-me").addClass("active");
-
-    $("ol.breadcrumb").append(breadcrumb_data.home + breadcrumb_data.aboutme + breadcrumb_data.myprojects + breadcrumb_data.contactme);
-
-      $("ol.breadcrumb").find("#bread-home").html('<a href="#" class="home">Home</a>');
-      $("ol.breadcrumb").find("#bread-aboutme").html('<a href="#" class="about-me">About me</a>');
-      $("ol.breadcrumb").find("#bread-webprojects").html('<a href="#" class="webprojects">My projects</a>');
-
-        $(".home").click(function(){
-
-        showTemplate(home_template, data);
-
-        $(".navbar .active").removeClass("active");
-        $(".home").addClass("active");
-
-        $("ol.breadcrumb").append(breadcrumb_data.home);
-
-        });
-
-        $(".about-me").click(function(){
-
-          showTemplate(about_me_template, data);
-
-          $(".navbar .active").removeClass("active");
-          $(".about-me").addClass("active");
-
-          $("ol.breadcrumb").append(breadcrumb_data.home + breadcrumb_data.aboutme);
-          $("ol.breadcrumb").find("#bread-home").html('<a href="#" class="home">Home</a>');
-
-            $(".home").click(function(){
-
-            showTemplate(home_template, data);
-
-            $(".navbar .active").removeClass("active");
-            $(".home").addClass("active");
-
-            $("ol.breadcrumb").append(breadcrumb_data.home);
-
-            });
-          });
-        $(".webprojects, .gameprojects").click(function(){
-            
-            showTemplate(my_projects_template, gallery);
-
-            $(".navbar .active").removeClass("active");
-            $(".my-projects").addClass("active");
-
-            $("ol.breadcrumb").append(breadcrumb_data.home + breadcrumb_data.aboutme + breadcrumb_data.myprojects);
-
-            $(".album-thumbnail").click(function(){
-              // get the index (position in the array)
-              // of the album we clicked on
-              // "this" is the element that was clicked on
-              // data("id") gets the attribute data-id
-              // (which we set to the index of the album in
-              // the array - @index)
-              var index = $(this).data("id");
-
-              // set the current album to this album
-              current_album = gallery.albums[index];
-
-              // displays the photos template
-              showTemplate(photo_template, current_album);
-
-            });
-        $("ol.breadcrumb").find("#bread-home").html('<a href="#" class="home">Home</a>');
-        $("ol.breadcrumb").find("#bread-aboutme").html('<a href="#" class="about-me">About me</a>');
-
-        /*PAREI AQUI !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-        
-          });
-
-  });
-  /* END Script to change navbar
-  ------------------------------------------------------------------------------------*/
-  $(".home").click();
-
-});
-</script>
-
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="https://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-
+          <div class="row">
+            {{#each images}}
+            <div class="col-xs-12 col-sm-12 col-md-6">
+              <img src="{{srcjohn}}" class="img-responsive img-thumbnail" alt="{{descjohn}}" title="namejohn" />
+            </div>
+            {{/each}}
+            <div class="col-xs-12 col-sm-12 col-md-6">
+              <address>
+                <h2>John Lenon Nascimento da Silva</h2>
+                <h3>Cargo: <span>Web Designer</span></h3>
+                <p>Address: <span>160 Harmonstown Road</span></p>
+                <p>Dublin: <span>5</span></p>
+                <p>Country: <span>Ireland</span></p>
+              </address>
+            </div> <!-- / col-->
+          </div> <!-- / Row-->
+          
+        </div> <!-- / col-->
+    </div> <!-- / Row-->
+
+    </script>
+    <!-- / ********** Contact me template ********** -->
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="https://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
   </body>
 </html>

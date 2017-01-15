@@ -1,10 +1,19 @@
+// this file contains the data we need for the gallery
+// The main object, "gallery" contains an array of album
+// each album contains an array of photos 
+// (plus a name and a thumbnail image)
+// The photos contain an image src and some metadata
+
     // define the data for the template
     // we define an objects which contains an
     // array of other objects. This array will be used
     // to create multiple images
-    var data = {
+    var db = {
       images:[
          {
+           srcjohn: "images/img_6.jpg",
+           namejohn: "John Nascimento",
+           descjohn: "Front-end developer",
            src: "images/img_6.jpg",
            title: "Shopping Center Magna Plaza Amsterdam 2014",
            author: "Tuxyso",
@@ -60,8 +69,8 @@
           webicon: "glyphicon glyphicon-globe",
           title: "Web Development",
           description: "My development is due to my <strong>degree in IT management</strong> and my <strong>certification in Computer Graphics focused in Game Design</strong>. Besides this qualifications, I also have a bunch of courses reagrding to web development and design as well as my <strong>experience of 4 years in the area acting as a Web Designer and Web Analyst</strong>.",
-        }
-      ],
+          }
+        ],
       latestprojects: [
         {
           title: "Street art",
@@ -90,8 +99,8 @@
           src: "images/img_5.jpg",
           imgdescription: "img description",
           imgtitle: "img title"
-        }
-      ],
+          }
+        ],
       footerinfo: [
         {
           adjclass: "col-md-offset-2",
@@ -113,14 +122,101 @@
           field2: "160 Harmonstown Road, Dublin 5<br> Dublin, Ireland<br>",
           field3: "<abbr title='Phone'>P:</abbr> +353 89 9833-946<br /><br />",
           field4: "<strong>Full Name</strong><br> <a href='mailto:#''>first.last@example.com</a>",
-        },
-      ],
-      breadcrumb_bar: [
+          },
+        ],
+      albums : [
         {
-        home: "<li id='bread-home'>Home</li>",
-        aboutme: "<li id='bread-aboutme'>About me</li>",
-        myprojects: "<li id='bread-webprojects'>My Projects</li>",
-        contactme: "<li id='bread-contactme'>Contact me</li>",
+          name : "Travels", 
+          thumbnail : "images/img_1.jpg",
+          description: "Web design Projects",
+          photos : [
+            { 
+              src : "images/img_1.jpg",
+              title : "grafitti", 
+              description : "some derelict appartments with grafitti"
+            }, 
+            { 
+              src : "images/img_6.jpg",
+              title : "fountain", 
+              description : "a huge dragon fountain"
+            }, 
+            { 
+              src : "images/img_7.jpg",
+              title : "tower", 
+              description : "a colourful tower block"
+            }, 
+            { 
+              src : "images/img_8.jpg",
+              title : "walkways", 
+              description : "an interesting interior"
+            } 
+          ]
+        },
+        {
+          name : "Equipment", 
+          thumbnail : "images/img_4.jpg",
+          description: "Web design Projects",
+          photos : [
+            { 
+              src : "images/img_4.jpg",
+              title : "syths", 
+              description : "all workshops should aspire to being this tidy"
+            }, 
+            { 
+              src : "images/img_9.jpg",
+              title : "helmet", 
+              description : "a sci-fi helmet"
+            }, 
+            { 
+              src : "images/img_12.jpg",
+              title : "drums", 
+              description : "a rather nice drum kit"
+            }  
+          ]
+        },
+        {
+          name : "English Winter", 
+          thumbnail : "images/img_17.jpg",
+          description: "Web design Projects",
+          photos : [
+            { 
+              src : "images/img_16.jpg",
+              title : "dog in the snow", 
+              description : "looks like he needs that jacket"
+            }, 
+            { 
+              src : "images/img_17.jpg",
+              title : "winter", 
+              description : "a snowy scene in a park"
+            }, 
+            { 
+              src : "images/img_18.jpg",
+              title : "frosty pond", 
+              description : "some ducks feeling cold"
+            } 
+          ]
+        },
+        {
+          name : "English Winter", 
+          thumbnail : "images/img_17.jpg",
+          description: "Web design Projects",
+          photos : [
+            { 
+              src : "images/img_16.jpg",
+              title : "dog in the snow", 
+              description : "looks like he needs that jacket"
+            }, 
+            { 
+              src : "images/img_17.jpg",
+              title : "winter", 
+              description : "a snowy scene in a park"
+            }, 
+            { 
+              src : "images/img_18.jpg",
+              title : "frosty pond", 
+              description : "some ducks feeling cold"
+            } 
+          ]
         }
       ]
     };
