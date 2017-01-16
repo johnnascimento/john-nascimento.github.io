@@ -52,6 +52,7 @@
           content2:"I hope you enjoy!",
           title2:"Latest projects",
           content3:"Check my recent projects",
+          srcjohn: "images/img_11.jpg",
           }
         ],
       skillNqualification: [
@@ -101,20 +102,36 @@
           imgtitle: "img title"
           }
         ],
+      aboutme: [
+        {
+          about: "About me",
+          briefdescription: "John Nascimento",
+          src: "images/img_5.jpg",
+          whoiam: "Who I am?",
+          whodescription: "My name is John Lenon Nascimento da Silva, I was born in 1991 and I'm married!<br />I have a degree in IT management by Faculdade Sao Paulo<br />and a certification in Computer Graphics by SAGA (School of Art Game and Animation).<br />I have over 3 years of experience as a Web Designer and 5 years working in IT area.",
+          firstcolumn: "Life",
+          secondcolumn: "Skills",
+          thirdcolumn: "Qualifications",
+          wherefindme: "Where to find me?",
+          wheredescription: "I've been living in Ireland since 2016 when I came to improve my english skill.<br />If you wish to meet me, just call or send me a message and I'll be happy to talk with you about your project or issue that needs maintenance.",
+          footer: "How to cntact me?",
+          footerdescription: "<span class='glyphicon glyphicon-earphone'></span> Phone: +353 89 983 3946<br /><span class='glyphicon glyphicon-phone'></span> WhatsApp: 00 55 11 97012 3139<br /><span class='glyphicon glyphicon-envelope'></span> E-mail: jlenonns@gmail.com",
+        },
+      ],
       footerinfo: [
         {
           adjclass: "col-md-offset-2",
-          field1: "<strong>Address</strong> <br />",
-          field2: "160 Harmonstown Road, Dublin 5<br> Dublin, Ireland<br>",
-          field3: "<abbr title='Phone'>P:</abbr> +353 89 9833-946<br /><br />",
-          field4: "<strong>Full Name</strong><br> <a href='mailto:#''>first.last@example.com</a>",
+          field1: "<a href='#'' class='home' id='home'>Home</a><br />",
+          field2: "<a href='#'' class='about-me' id='about-me'>About me</a><br />",
+          field3: "<a href='#'' class='webprojects' id='webprojects'>My Projects</a><br />",
+          field4: "<a href='#'' class='contact-me' id='contact-me'>Contact me</a>",
         },
         {
           adjclass: "",
-          field1: "<strong>Address</strong> <br />",
-          field2: "160 Harmonstown Road, Dublin 5<br> Dublin, Ireland<br>",
-          field3: "<abbr title='Phone'>P:</abbr> +353 89 9833-946<br /><br />",
-          field4: "<strong>Full Name</strong><br> <a href='mailto:#''>first.last@example.com</a>",
+          field1: "",
+          field2: "",
+          field3: "",
+          field4: "",
         },
         {
           adjclass: "",
