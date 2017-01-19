@@ -2,7 +2,108 @@
 ----------------------------------------------------------*/
 body{
 	padding-top: 55px;
+	background-color:#ECECEC;
 }
+h1, h2, h3, h4, h5, h6{
+	color: #282F44;
+}
+p{
+	color: #282F44;
+}
+/* Adjustments section
+   Slideshow = Padding and Border bottom
+-----------------------------------------------------*/
+.slideshowadjs{
+	padding: 20px 0px;
+	border-bottom: 1px solid #232733; /*Navy blue*/
+}
+
+/* 
+	BG colors
+-----------------------------------------------------*/
+.bg-1{
+	background-color: #282F44;
+	color: #b1b1b1;
+	/*border-bottom: 1px solid #B1B1B1; Grey darker*/
+	border-bottom: 1px solid #232733; /*Navy blue*/
+}
+.bg-1 h1{
+	color: #F5D061;
+}
+.bg-1 h2{
+	color: #E6AF2E;
+}
+.bg-1 strong{
+	color: #F5D061;
+}
+.bg-2{
+	background-color:#ECECEC;
+	border-bottom: 1px solid #232733; /*Navy blue*/
+}
+.bg-1 p{
+	color: #ececec;
+}
+.bg-3{
+	background-color: #F5D061; /*Slightly Yellow*/
+	color: #444444;
+	border-bottom: 1px solid #222222;
+}
+.bgsize{
+	padding: 70px 0px;
+}
+.bgsize2{
+	padding: 70px 0px 10px;
+}
+.bgsize3{
+	padding: 35px 0px;
+}
+/* 
+	= Web icon colors
+----------------------------------------------*/
+.aboutmeicon{
+	background-color: #ECECEC;
+	color: #282F44;
+	border: 5px solid #282F44;
+    box-shadow: 2px 2px 0px #ececec;
+    -webkit-box-shadow: 2px 2px 0px #ececec;
+       -moz-box-shadow: 2px 2px 0px #ececec;
+    	-ms-box-shadow: 2px 2px 0px #ececec;
+    	 -o-box-shadow: 2px 2px 0px #ececec;
+}
+
+/*
+	= Footer icons and navbar adjustments
+------------------------------------------------*/
+.social-icons{
+	padding: 20px 25px;
+	background-color: #282F44;
+	color: #ECECEC;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	    -ms-border-radius: 50%;
+	     -o-border-radius: 50%;
+	border: 3px solid #ececec;
+	    box-shadow: 2px 2px 0px #282F44;
+	    -webkit-box-shadow: 2px 2px 0px #282F44;
+	       -moz-box-shadow: 2px 2px 0px #282F44;
+	    	-ms-box-shadow: 2px 2px 0px #282F44;
+	    	 -o-box-shadow: 2px 2px 0px #282F44;
+}
+.social-icons:hover{
+	color: #F5D061;
+}
+.formicon{
+	padding-top: 40px;
+}
+
+.navbar{
+	border-bottom: 1px solid #DFDFDF;
+}
+
+/*
+	= Logo adjustments
+----------------------------------------------*/
 .icon-size{
 	width:30px;
 	height:30px;
@@ -57,32 +158,10 @@ body{
 	min-height: 700px;
 }
 .profile{
-	width:350px;
-	height:350px;
+	width:175px;
+	height:175px;
 }
-.bgsize{
-	padding:70px 0px;
-}
-.bg-1{
-	background-color: #282F44; /*Navy blue*/
-	color: #E4E4E4;
-	border-bottom: 1px solid #9a9a9a;
-}
-.bg-2{
-	background-color: #ECECEC; /*Gray*/
-	color: #444444;	
-	border-bottom: 1px solid #41B3D3;
-}
-.bg-3{
-	background-color: #F5D061; /*Slightly Yellow*/
-	color: #444444;
-	border-bottom: 1px solid #222222;
-}
-.social-icons{
-	width:35px;
-	height:35px;
-	background-color: #efefef;
-}
+
 
 /*Carousel (gradient)
 ------------------------------------*/
