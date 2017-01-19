@@ -37,20 +37,6 @@ body{
     height: 60px;
     padding: 20px 10px;
 }
-.parallax {    
-	/* The image used */
-    background-image: url("../images/img_1.jpg");
-
-    /* Set a specific height */
-    min-height: 350px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-}
 .contact-me-body{
 	padding-top: 20px;
 	padding-bottom: 20px;
