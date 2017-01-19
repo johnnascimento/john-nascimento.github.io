@@ -64,22 +64,37 @@ body{
 	padding:70px 0px;
 }
 .bg-1{
-	background-color: #41B3D3;
+	background-color: #282F44; /*Navy blue*/
 	color: #E4E4E4;
 	border-bottom: 1px solid #9a9a9a;
 }
 .bg-2{
-	background-color: #E4E4E4;
+	background-color: #ECECEC; /*Gray*/
 	color: #444444;	
 	border-bottom: 1px solid #41B3D3;
 }
 .bg-3{
-	background-color: #61D2DC;
+	background-color: #F5D061; /*Slightly Yellow*/
 	color: #444444;
 	border-bottom: 1px solid #222222;
 }
-.bg-4{
-	background-color: #444444;
-	color: #E4E4E4;
-	border-bottom: 1px solid #eaeaea;
+.social-icons{
+	width:35px;
+	height:35px;
+	background-color: #efefef;
+}
+
+/*Carousel (gradient)
+------------------------------------*/
+.carousel-control.left{
+	background-image: none;
+}
+.carousel-control.right{
+	background-image: none;
+}
+.carousel-control{
+	color: #444444;
+}
+.carousel-control:hover{
+	color: #444444;
 }
