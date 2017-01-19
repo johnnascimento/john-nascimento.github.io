@@ -111,7 +111,7 @@
     -->
     <!-- ********** Home template ********** -->
     <script id="home-template" type="text/x-handlebars-template">
-      <div class="row slideshow slideshowadjs">
+      <div class="row slideshow">
         <div class="col-xs-12 col-md-12">
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -152,28 +152,24 @@
       </div> <!-- / col -->
     </div> <!-- / row -->
 
-    <div class="row bgsize bg-1">
+    <div class="row">
     {{#each section2}}
       <div class="col-xs-12 col-md-12 text-center">
-        <h1>{{title1}}</h1>
-        <p class="lead">{{content1}}</p>
+        <h1 class="text-primary">{{title1}}</h1>
+        <p>{{content1}}</p>
         <p>{{content2}}</p>
+        <h2 class="text-info">{{title2}}</h2>
+        <p>{{content3}}</p>
       </div>
     </div>
     {{/each}}
 
+    <p>&nbsp;</p>
+
     <!-- Latest projects grid -->
-    <div class="row bgsize2">
-    {{#each section2}}
-      <div class="col-xs-12 col-md-12 text-center">
-        <h2 class="text-primary">{{title2}}</h2>
-        <p class="lead">{{content3}}</p>
-      </div>
-    </div> <!-- / row -->
-    {{/each}}
-    <div class="row bgsize2 bg-2">
+    <div class="row">
     {{#each albums}}
-      <div class="col-xs-12 col-sm-6 col-md-3">
+      <div class="col-xs-12 col-sm-3 col-md-3">
         <div class="thumbnail">
           <img src="{{thumbnail}}" title="{{name}}" alt="{{description}}" class="album-thumbnail" data-id="{{@index}}"/>
            <div class="caption">
@@ -188,21 +184,24 @@
       </div>
       {{/each}}
     </div><!-- / Latest projects grid -->
+ 
+
+    <p>&nbsp;</p>
 
     <!-- Skills and Qualifications grid -->
-    <div class="row text-center bgsize bg-1" id="skillNqualification">
+    <div class="row text-center" id="skillNqualification">
       <div class="col-xs-12 col-md-12">
         <h2>About me!</h2>
         <p>&nbsp;</p>
       </div>
 
       {{#each skillNqualification}}
-      <div class="col-xs-12 col-sm-12 col-md-4">
-        <div class="aboutmeicon img-circle img-thumbnail">
-          <span class="{{webicon}}"></span>
+      <div class="col-xs-12 col-md-4">
+        <div class="bg-info img-circle img-thumbnail">
+          <span class="{{webicon}}" style="font-size:50px"></span>
         </div>
         <h3>{{title}}</h3>
-        <p align="justify">{{{description}}}</p>
+        <p>{{{description}}}</p>
         <p class="text-center">
           <a href="#" class="btn btn-default about-me">Read more »</a>
         </p>
@@ -212,18 +211,16 @@
 
     
       <!--  Footer -->
-      <div class="row bg-2">
+      <div class="row bg-success">
         <footer class="footer">
           {{#each footerinfo}}
           <div class="col-xs-12 col-md-4">
-           <form class="text-center {{adjclass2}}">
-            <Address>
-              {{{field1}}}
-              {{{field2}}}
-              {{{field3}}}
-              {{{field4}}}
-            </Address>
-           </form>
+            <ul class="nav nav-stacked text-center">
+              <li>{{{field1}}}</li>
+              <li>{{{field2}}}</li>
+              <li>{{{field3}}}</li>
+              <li class="disable">{{{field4}}}</li>
+            </ul>
           </div>
           {{/each}}
         </footer>
@@ -271,18 +268,16 @@
       </div><!-- / row -->
 
       <!--  Footer -->
-      <div class="row bg-2">
+      <div class="row bg-success">
         <footer class="footer">
           {{#each footerinfo}}
           <div class="col-xs-12 col-md-4">
-           <form class="text-center {{adjclass2}}">
-            <Address>
-              {{{field1}}}
-              {{{field2}}}
-              {{{field3}}}
-              {{{field4}}}
-            </Address>
-           </form>
+            <ul class="nav nav-stacked text-center">
+              <li>{{{field1}}}</li>
+              <li>{{{field2}}}</li>
+              <li>{{{field3}}}</li>
+              <li class="disable">{{{field4}}}</li>
+            </ul>
           </div>
           {{/each}}
         </footer>
@@ -294,18 +289,17 @@
     <!-- ********** My Projects template ********** -->
     <script id="my-projects-template" type="text/x-handlebars-template">
       <div class="row">
-        <div class="col-xs-12 col-md-12 bgsize3 bg-2 text-center">
-        <span class="fa-stack" style="font-size:75px;">
-          <i class="fa fa-circle-thin fa-stack-2x"></i>
-          <i class="fa fa-briefcase fa-stack-1x"></i>
-        </span>
-        <h2>Check out my projects</h2>
-       </div><!-- / col -->
-      </div><!-- / row-->
+        <div class="col-xs-12 col-md-12 bgsize bg-1 text-center">
+          <h1>{{name}}</h1>
+          <span class="fa-stack" style="font-size:150px;">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-briefcase fa-rotate-10 fa-stack-1x"></i>
+          </span>
+          <h2>{{{description}}}</h2>
+        </div><!-- / col -->
 
-      <div class="row bg-1 bgsize">
         {{#each albums}}
-        <div class="col-xs-12 col-md-3 bgsize"> 
+        <div class="col-xs-12 col-md-3"> 
           <div class="thumbnail album-thumbnail" data-id="{{@index}}">
             <img class="crop-img" src="{{thumbnail}}" alt=""/> 
               
@@ -315,27 +309,9 @@
             </div>
            </div>
         </div> <!-- / col -->
-        {{/each}}
-       </div><!-- / row-->
 
-      <!--  Footer -->
-      <div class="row bg-2">
-        <footer class="footer">
-          {{#each footerinfo}}
-          <div class="col-xs-12 col-md-4">
-           <form class="text-center {{adjclass2}}">
-            <Address>
-              {{{field1}}}
-              {{{field2}}}
-              {{{field3}}}
-              {{{field4}}}
-            </Address>
-           </form>
-          </div>
-          {{/each}}
-        </footer>
-      </div>
-    </div><!-- / Footer -->
+        {{/each}}
+      </div><!-- / row-->
 
     </script>
     <!-- / ********** My projects template ********** -->
@@ -343,18 +319,17 @@
     <!-- ********** My projects' Albums template ********** -->
     <script id="albums_template" type="text/x-handlebars-template">
     <div class="row">
-      <div class="col-xs-12 col-md-12 bgsize3 bg-2 text-center">
-        <span class="fa-stack" style="font-size:75px;">
+      <div class="col-xs-12 col-md-12 bgsize bg-1 text-center">
+        <h1>{{name}}</h1>
+        <span class="fa-stack" style="font-size:150px;">
           <i class="fa fa-circle-thin fa-stack-2x"></i>
-          <i class="fa fa-briefcase fa-stack-1x"></i>
+          <i class="fa fa-briefcase fa-rotate-10 fa-stack-1x"></i>
         </span>
-        <h2>Projectos</h2>
+        <h2>{{{description}}}</h2>
       </div><!-- / col -->
-    </div> <!-- / row -->
 
-    <div class="row bg-1 bgsize">
       {{#each photos}}
-      <div class="col-xs-12 col-sm-6 col-md-3 bgsize text-center">
+      <div class="col-xs-12 col-sm-6 col-md-3 text-center">
         <div class="thumbnail single-photo-thumbnail" data-id="{{@index}}">
           <img class="center-cropped img-responsive" src="{{src}}" alt=""/>
           
@@ -368,43 +343,23 @@
         </div>
       </div> <!-- / col -->
       {{/each}}
-     </div> <!-- / row -->
-
-    <!--  Footer -->
-      <div class="row bg-2">
-        <footer class="footer">
-          {{#each footerinfo}}
-          <div class="col-xs-12 col-md-4">
-           <form class="text-center {{adjclass2}}">
-            <Address>
-              {{{field1}}}
-              {{{field2}}}
-              {{{field3}}}
-              {{{field4}}}
-            </Address>
-           </form>
-          </div>
-          {{/each}}
-        </footer>
-      </div>
-    </div><!-- / Footer -->
+    </div> <!-- / row -->
     </script>
     <!-- / ********** My projects' Albums template ********** -->
 
     <!-- ********** Album's single photo ********** -->
     <script id="single_photo_template" type="text/x-handlebars-template">
     <div class="row">
-      <div class="col-xs-12 col-md-12 bgsize3 bg-2 text-center">
-        <span class="fa-stack" style="font-size:75px;">
+      <div class="col-xs-12 col-md-12 bgsize bg-1 text-center">
+        <h1>{{title}}</h1>
+        <span class="fa-stack" style="font-size:150px;">
           <i class="fa fa-circle-thin fa-stack-2x"></i>
-          <i class="fa fa-briefcase fa-stack-1x"></i>
+          <i class="fa fa-briefcase fa-rotate-10 fa-stack-1x"></i>
         </span>
-        <h2>Projetos</h2>
+        <h2>{{{description}}}</h2>
       </div><!-- / col -->
-    </div> <!-- / row -->
 
-    <div class="row bg-1 bgsize">
-      <div class="col-xs-12 col-sm-8 col-md-7 bg-size">
+      <div class="col-xs-12 col-sm-8 col-md-7">
         <img src="{{src}}"class="img-thumbnail img-responsive center-cropped" />
       </div> <!-- / col -->
 
@@ -415,79 +370,43 @@
         </div>
       </div><!-- / col -->
     </div> <!-- / row -->
-
-    <!--  Footer -->
-      <div class="row bg-2">
-        <footer class="footer">
-          {{#each footerinfo}}
-          <div class="col-xs-12 col-md-4">
-           <form class="text-center {{adjclass2}}">
-            <Address>
-              {{{field1}}}
-              {{{field2}}}
-              {{{field3}}}
-              {{{field4}}}
-            </Address>
-           </form>
-          </div>
-          {{/each}}
-        </footer>
-      </div>
-    </div><!-- / Footer -->
     </script>
     <!-- / ********** Album's single photo ********** -->
 
     <!-- ********** Contact me template ********** -->
     <script id="contact-me-template" type="text/x-handlebars-template">
       <div class="row">
-        <div class="col-xs-12 col-md-12 bgsize3 bg-2 text-center">
-          <span class="fa-stack" style="font-size:75px;">
-            <i class="fa fa-circle-thin fa-stack-2x"></i>
-            <i class="fa fa-mobile fa-stack-1x"></i>
-          </span>
-          <h2>Contact me</h2>
-        </div><!-- / col -->
+      <div class="col-xs-12 col-md-12 bgsize bg-1 text-center">
+        <h1>{{name}}</h1>
+        <span class="fa-stack" style="font-size:150px;">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-mobile fa-stack-1x"></i>
+        </span>
+        <h2>{{{description}}}</h2>
+      </div><!-- / col -->
 
-        <div class="contact-me-body col-xs-12 col-sm-12 col-md-12 bg-size bg-1 text-center">
-          {{#each contactme}}
+        <div class="contact-me-body col-xs-12 col-sm-12 col-md-offset-2 col-md-8 text-center">
+          <h1>Contact me</h1>
 
           <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-4">
+            {{#each images}}
+            <div class="col-xs-12 col-sm-12 col-md-6">
               <img src="{{srcjohn}}" class="img-responsive img-thumbnail" alt="{{descjohn}}" title="namejohn" />
             </div>
-            
+            {{/each}}
             <div class="col-xs-12 col-sm-12 col-md-6">
-              <ul class="">
+              <address>
                 <h2>John Lenon Nascimento da Silva</h2>
                 <h3>Cargo: <span>Web Designer</span></h3>
                 <p>Address: <span>160 Harmonstown Road</span></p>
                 <p>Dublin: <span>5</span></p>
                 <p>Country: <span>Ireland</span></p>
-              <ul>
+              </address>
             </div> <!-- / col-->
           </div> <!-- / Row-->
-          {{/each}}
+          
         </div> <!-- / col-->
     </div> <!-- / Row-->
-
-    <!--  Footer -->
-      <div class="row bg-2">
-        <footer class="footer">
-          {{#each footerinfo}}
-          <div class="col-xs-12 col-md-4">
-           <form class="text-center {{adjclass2}}">
-            <Address>
-              {{{field1}}}
-              {{{field2}}}
-              {{{field3}}}
-              {{{field4}}}
-            </Address>
-           </form>
-          </div>
-          {{/each}}
-        </footer>
-      </div>
-    </div><!-- / Footer -->
 
     </script>
     <!-- / ********** Contact me template ********** -->

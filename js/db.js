@@ -11,6 +11,9 @@
     var db = {
       images:[
          {
+           srcjohn: "images/img_6.jpg",
+           namejohn: "John Nascimento",
+           descjohn: "Front-end developer",
            src: "images/img_6.jpg",
            title: "Shopping Center Magna Plaza Amsterdam 2014",
            author: "Tuxyso",
@@ -48,23 +51,23 @@
           content1:"Here you will find some works I've made in the past, some works I'm producing and some works in my schedule.",
           content2:"I hope you enjoy!",
           title2:"Latest projects",
-          content3: "You can check out my Jobs bellow",
+          content3:"Check my recent projects",
           srcjohn: "images/img_11.jpg",
           }
         ],
       skillNqualification: [
         {
-          webicon: "fa fa-code fa-4x",
+          webicon: "glyphicon glyphicon-console",
           title: "Web Development",
-          description: "Web Development with <strong>HTML(5), CSS(3) and Javascript / Jquery</strong>. I've already produced websites using the <strong>Bootstrap framework and Handlebars template</strong>. I also have experience with <strong>Joolma and Wordpress</strong>. To develop without problem during the process I also use <strong>Github</strong> to control the file versions and preserve the development.",
+          description: "Web Development with <strong>HTML(5), CSS(3) and Javascript / Jquery</strong>.<br />I've already produced websites using the <strong>Bootstrap framework and Handlebars template</strong>.<br />I also have experience with <strong>Joolma and Wordpress</strong>.<br /> To develop without problem during the process I also use <strong>Github</strong> to control the file versions and preserve the development.",
         },
         {
-          webicon: "fa fa-pencil fa-4x",
+          webicon: "glyphicon glyphicon-tasks",
           title: "Web Development",
-          description: "I also use others technologies to improve the result of my projects. Some of them are: <strong>Dreamweaver, Sublime, Photoshop, Gimp, Illustrator, 3D Maya and Mudbox (3D)</strong>.",
+          description: "I also use others technologies to improve the result of my projects. Some of them are:<br /><strong>Dreamweaver, Sublime, Photoshop, Gimp, Illustrator, 3D Maya and Mudbox (3D)</strong>.",
         },
         {
-          webicon: "fa fa-graduation-cap fa-4x",
+          webicon: "glyphicon glyphicon-globe",
           title: "Web Development",
           description: "My development is due to my <strong>degree in IT management</strong> and my <strong>certification in Computer Graphics focused in Game Design</strong>. Besides this qualifications, I also have a bunch of courses reagrding to web development and design as well as my <strong>experience of 4 years in the area acting as a Web Designer and Web Analyst</strong>.",
           }
@@ -111,42 +114,31 @@
           thirdcolumn: "Qualifications",
           wherefindme: "Where to find me?",
           wheredescription: "I've been living in Ireland since 2016 when I came to improve my english skill.<br />If you wish to meet me, just call or send me a message and I'll be happy to talk with you about your project or issue that needs maintenance.",
-          footer: "How to contact me?",
+          footer: "How to cntact me?",
           footerdescription: "<span class='glyphicon glyphicon-earphone'></span> Phone: +353 89 983 3946<br /><span class='glyphicon glyphicon-phone'></span> WhatsApp: 00 55 11 97012 3139<br /><span class='glyphicon glyphicon-envelope'></span> E-mail: jlenonns@gmail.com",
         },
-      ],
-      contactme: [
-        {
-          srcjohn: "images/img_6.jpg",
-          namejohn: "John Nascimento",
-          descjohn: "Front-end developer",
-          title: "Contact me",
-        }
       ],
       footerinfo: [
         {
           adjclass: "col-md-offset-1",
-          adjclass2: "formicon",
-          field1: "<a href='https://www.linkedin.com/in/john-lenon-nascimento-da-silva-8b060851' class='social-icons' target='_blank'><i class='fa fa-linkedin' area-hidden='true'></i></a>",
-          field2: "<a href='https://www.facebook.com/john.nasc.7' class='social-icons' target='_blank'><i class='fa fa-facebook' area-hidden='true'></i></a>",
-          field3: "<a href='https://www.instagram.com/johnlnascimento/' class='social-icons' target='_blank'><i class='fa fa-instagram' area-hidden='true'></i></a>",
-          field4: "",
+          field1: "<strong>Address</strong> <br />",
+          field2: "160 Harmonstown Road, Dublin 5<br> Dublin, Ireland<br>",
+          field3: "<abbr title='Phone'>P:</abbr> +353 89 9833-946<br /><br />",
+          field4: "<strong>Entre em contato</strong><br><a href='mailto:jlenonns@gmail.com'>jlenonns@gmail.com</a>",
         },
         {
           adjclass: "",
-          adjclass2: "formicon",
           field1: "Portfolio created by<br />",
-          field2: "<strong>John Lenon Nascimento da Silva</strong><br />",
+          field2: "<strong>John Lenon Nascimento da Silva</strong>",
           field3: "All Rights Reserved",
           field4: "",
         },
         {
           adjclass: "",
-          adjclass2: "",
-          field1: "<strong>John Silva</strong> <br />",
-          field2: "160 Harmonstown Road, Dublin 5<br> Dublin, Ireland<br>",
-          field3: "<abbr title='Phone'>P:</abbr> +353 89 9833-946<br /><br />",
-          field4: "<strong>Entre em contato</strong><br><a href='mailto:jlenonns@gmail.com'>jlenonns@gmail.com</a>",
+          field1: "</span><a href='https://www.linkedin.com/in/john-lenon-nascimento-da-silva-8b060851' target='_blank'><i class='fa fa-linkedin' area-hidden='true'></i> Linkedin</a>",
+          field2: "<a href='https://www.facebook.com/john.nasc.7' target='_blank'><i class='fa fa-facebook' area-hidden='true'></i> Facebook</a>",
+          field3: "<a href='https://www.instagram.com/johnlnascimento/' target='_blank'><i class='fa fa-instagram' area-hidden='true'></i> Instagram</a>",
+          field4: "",
           },
         ],
       albums : [
