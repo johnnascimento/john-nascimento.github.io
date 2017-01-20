@@ -94,6 +94,7 @@ $(document).ready(function(){
 
   $(".about-me").click(function(){
 
+
     showTemplate(about_me_template, db);
 
     $(".navbar .active").removeClass("active");
