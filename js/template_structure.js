@@ -31,8 +31,6 @@ $(document).ready(function(){
 
   source = $("#contact-me-template").html();
   contact_me_template = Handlebars.compile(source);
-
-
   
     
   /* This script will change the active class in the navbar accordingly where you click
