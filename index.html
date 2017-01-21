@@ -67,9 +67,6 @@
             <li class="active home" id="home">
               <a href="#"><span class="sr-only">(current)</span>Home</a>
             </li>
-            <li class="about-me" id="about-me">
-              <a href="#">About me</a>
-            </li>
             <li id="my-projects" class="my-projects dropdown">
               <a href="#" class="dropdown-toggle" id="ddMprojects" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">My projects<span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledly="ddMprojects">
@@ -78,9 +75,12 @@
                 <li class="gameprojects disable" id="gameprojects"><a href="#">Game Design</a></li>
               </ul>
             </li>
-            <li  class="contact-me" id="contact-me">
-              <a href="#">Contact me</a>
+            <li class="about-me" id="about-me">
+              <a href="#">About me</a>
             </li>
+            <!--<li class="contact-me" id="contact-me">
+              <a href="#">Contact me</a>
+            </li>-->
           </ul><!-- / Main navbar links -->
 
           <!-- Social icons together It's hidden now
@@ -112,6 +112,10 @@
     -->
     <!-- ********** Home template ********** -->
     <script id="home-template" type="text/x-handlebars-template">
+      <div class="row">
+        <div class="col-xs-12 col-md-12 bg-size3 bg-1">
+        </div>
+      </div>
       <div class="row slideshow slideshowadjs">
         <div class="col-xs-12 col-md-12">
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -153,7 +157,7 @@
       </div> <!-- / col -->
     </div> <!-- / row -->
 
-    <div class="row bgsize bg-1">
+    <div class="row bg-size bg-1">
     {{#each section2}}
       <div class="col-xs-12 col-md-12 text-center">
         <h1>{{title1}}</h1>
@@ -164,7 +168,7 @@
     {{/each}}
 
     <!-- Latest projects grid -->
-    <div class="row bgsize2">
+    <div class="row bg-size2">
     {{#each section2}}
       <div class="col-xs-12 col-md-12 text-center">
         <h2 class="text-primary">{{title2}}</h2>
@@ -172,7 +176,7 @@
       </div>
     </div> <!-- / row -->
     {{/each}}
-    <div class="row bgsize bg-2">
+    <div class="row bg-size bg-2">
     {{#each albums}}
       <div class="col-xs-12 col-sm-6 col-md-3">
         <div class="thumbnail">
@@ -191,7 +195,7 @@
     </div><!-- / Latest projects grid -->
 
     <!-- Skills and Qualifications grid -->
-    <div class="row text-center bgsize bg-1" id="skillNqualification">
+    <div class="row text-center bg-size bg-1" id="skillNqualification">
       <div class="col-xs-12 col-md-12">
         <h2>About me!</h2>
         <p>&nbsp;</p>
@@ -236,13 +240,13 @@
     <script id="about-me-template" type="text/x-handlebars-template">
       <div class="row">
       {{#each aboutme}}
-        <div class="col-xs-12 col-md-12 bgsize bg-1 text-center">
+        <div class="col-xs-12 col-md-12 bg-size bg-1 text-center">
           <h1>{{about}}</h1>
-          <img src="{{src}}" class="img-thumbnail img-circle profile" alt="{{whodescription}}" title="{{briefdescription}}" />
+          <img src="{{src}}" class="img-thumbnail img-circle profile aboutmeicon" alt="{{whodescription}}" title="{{briefdescription}}" />
           <h2>{{{briefdescription}}}</h2>
         </div><!-- / col -->
 
-        <div class="col-xs-12 col-md-12 bgsize bg-2 text-center">
+        <div class="col-xs-12 col-md-12 bg-size bg-2 text-center">
           <h3>{{whoiam}}</h3>
           <div class="col-xs-12 col-md-4 text-center">
             <h4>{{firstcolumn}}</h4>
@@ -258,13 +262,9 @@
           </div>
         </div><!-- / col -->
 
-        <div class="col-xs-12 col-md-12 bgsize bg-1 text-center">
-          <h3>{{wherefindme}}</h3>
+        <div class="col-xs-12 col-md-12 bg-size bg-1 text-center">
+          <h2>{{wherefindme}}</h2>
           <p>{{{wheredescription}}}</p>
-          <a href="#" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-search"></span> Search</a>
-        </div>
-
-        <div class="col-xs-12 col-md-12 bgsize bg-3 text-center">
           <h3>{{footer}}</h3>
           <p>{{{footerdescription}}}</p>
         </div>
@@ -295,7 +295,11 @@
     <!-- ********** My Projects template ********** -->
     <script id="my-projects-template" type="text/x-handlebars-template">
       <div class="row">
-        <div class="col-xs-12 col-md-12 bgsize3 bg-2 text-center">
+        <div class="col-xs-12 col-md-12 bg-size3 bg-1">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-12 bg-size3 bg-2 text-center">
         <span class="fa-stack" style="font-size:75px;">
           <i class="fa fa-circle-thin fa-stack-2x"></i>
           <i class="fa fa-briefcase fa-stack-1x"></i>
@@ -304,9 +308,9 @@
        </div><!-- / col -->
       </div><!-- / row-->
 
-      <div class="row bg-1 bgsize">
+      <div class="row bg-1 bg-size">
         {{#each albums}}
-        <div class="col-xs-12 col-md-3 bgsize"> 
+        <div class="col-xs-12 col-md-3">
           <div class="thumbnail album-thumbnail" data-id="{{@index}}">
             <img class="crop-img" src="{{thumbnail}}" alt=""/> 
               
@@ -344,7 +348,11 @@
     <!-- ********** My projects' Albums template ********** -->
     <script id="albums_template" type="text/x-handlebars-template">
     <div class="row">
-      <div class="col-xs-12 col-md-12 bgsize3 bg-2 text-center">
+      <div class="col-xs-12 col-md-12 bg-size3 bg-1">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-12 bg-size3 bg-2 text-center">
         <span class="fa-stack" style="font-size:75px;">
           <i class="fa fa-circle-thin fa-stack-2x"></i>
           <i class="fa fa-briefcase fa-stack-1x"></i>
@@ -353,9 +361,9 @@
       </div><!-- / col -->
     </div> <!-- / row -->
 
-    <div class="row bg-1 bgsize">
+    <div class="row bg-1 bg-size">
       {{#each photos}}
-      <div class="col-xs-12 col-sm-6 col-md-3 bgsize text-center">
+      <div class="col-xs-12 col-sm-6 col-md-3 text-center">
         <div class="thumbnail single-photo-thumbnail" data-id="{{@index}}">
           <img class="center-cropped img-responsive" src="{{src}}" alt=""/>
           
@@ -395,7 +403,11 @@
     <!-- ********** Album's single photo ********** -->
     <script id="single_photo_template" type="text/x-handlebars-template">
     <div class="row">
-      <div class="col-xs-12 col-md-12 bgsize3 bg-2 text-center">
+      <div class="col-xs-12 col-md-12 bg-size3 bg-1">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-12 bg-size3 bg-2 text-center">
         <span class="fa-stack" style="font-size:75px;">
           <i class="fa fa-circle-thin fa-stack-2x"></i>
           <i class="fa fa-briefcase fa-stack-1x"></i>
@@ -404,8 +416,8 @@
       </div><!-- / col -->
     </div> <!-- / row -->
 
-    <div class="row bg-1 bgsize">
-      <div class="col-xs-12 col-sm-8 col-md-7 bg-size">
+    <div class="row bg-1 bg-size">
+      <div class="col-xs-12 col-sm-8 col-md-7">
         <img src="{{src}}"class="img-thumbnail img-responsive center-cropped" />
       </div> <!-- / col -->
 
@@ -441,7 +453,11 @@
     <!-- ********** Contact me template ********** -->
     <script id="contact-me-template" type="text/x-handlebars-template">
       <div class="row">
-        <div class="col-xs-12 col-md-12 bgsize3 bg-2 text-center">
+        <div class="col-xs-12 col-md-12 bg-size3 bg-1">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-12 bg-size3 bg-2 text-center">
           <span class="fa-stack" style="font-size:75px;">
             <i class="fa fa-circle-thin fa-stack-2x"></i>
             <i class="fa fa-mobile fa-stack-1x"></i>
@@ -449,21 +465,30 @@
           <h2>Contact me</h2>
         </div><!-- / col -->
 
-        <div class="contact-me-body col-xs-12 col-sm-12 col-md-12 bg-size bg-1 text-center">
+        <div class="contact-me-body col-xs-12 col-sm-12 col-md-12 bg-1 text-center">
           {{#each contactme}}
 
-          <div class="row">
+          <div class="row bg-size">
             <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-4">
               <img src="{{srcjohn}}" class="img-responsive img-thumbnail" alt="{{descjohn}}" title="namejohn" />
             </div>
             
-            <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="col-xs-12 col-sm-12 col-md-6 bg-size">
               <ul class="">
                 <h2>John Lenon Nascimento da Silva</h2>
-                <h3>Cargo: <span>Web Designer</span></h3>
-                <p>Address: <span>160 Harmonstown Road</span></p>
-                <p>Dublin: <span>5</span></p>
-                <p>Country: <span>Ireland</span></p>
+                <p class="lead">Web Designer <i class="fa fa-code fa-1x"></i> <i class="fa fa-pencil fa-1x"></i></p>
+                <p><strong>You can find me at:</strong><br />
+                   160 Harmonstown Road<br />
+                   Dublin: <span>5</span><br />
+                   Country: <span>Ireland</span></p>
+                <p>&nbsp;</p>
+                <h2>
+                  Contact me<br />
+                </h2>
+                <p>
+                  <a href="mailto:jlenonns@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope"></i> by email</a>
+                  <a href="tel:+353899833946" class="btn btn-default btn-lg"><i class="fa fa-envelope"></i> by phone</a>
+                </p>
               <ul>
             </div> <!-- / col-->
           </div> <!-- / Row-->
