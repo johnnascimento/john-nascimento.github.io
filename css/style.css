@@ -193,6 +193,12 @@ p{
 	margin: 0 auto;
 	overflow: hidden;
 }
+.carousel-inner p{
+	color: #efefef;
+	font-size: 1.4em;
+	background-color: rgba(132,132,132,0.7);
+	border-radius: 50%;
+}
 .center-cropped {
 	width: 100%;
 	background-size: cover;
