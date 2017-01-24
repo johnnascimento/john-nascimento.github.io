@@ -143,7 +143,7 @@
         {
           adjclass: "",
           adjclass2: "",
-          field1: "<strong>John Silva</strong> <br />",
+          field1: "<strong>John Nascimento</strong> <br />",
           field2: "160 Harmonstown Road, Dublin 5<br> Dublin, Ireland<br>",
           field3: "<abbr title='Phone'>P:</abbr> +353 89 9833-946<br /><br />",
           field4: "<strong>Entre em contato</strong><br><a href='mailto:jlenonns@gmail.com'>jlenonns@gmail.com</a>",
@@ -158,7 +158,18 @@
             { 
               src : "images/img_1.jpg",
               title : "grafitti", 
-              description : "some derelict appartments with grafitti"
+              description : "some derelict appartments with grafitti",
+              moreimgs: [
+                {
+                  thumb: "images/img_1.jpg",
+                },
+                {
+                  thumb: "images/img_2.jpg",
+                },
+                {
+                  thumb: "images/img_3.jpg",
+                }
+              ]
             }, 
             { 
               src : "images/img_6.jpg",

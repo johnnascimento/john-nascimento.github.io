@@ -1,7 +1,7 @@
 /*
   This script will fill out the blank spots in html file
 */
-  var html, source, home_template, about_me_template, contact_me_template, my_projects_template, photo_template;
+  var html, source, home_template, about_me_template, contact_me_template, my_projects_template, photo_template, footer_template;
 
   // variables to store the current displayed album and photo
   var current_album = db.albums[0];
@@ -10,6 +10,11 @@
   function showTemplate(template, data){
     html    = template(data);
     $('#content').html(html);
+  }
+
+  function showTemplateFooter(template, data){
+    html    = template(data);
+    $('#footer').html(html);
   }
 
 $(document).ready(function(){
@@ -32,11 +37,15 @@ $(document).ready(function(){
   source = $("#contact-me-template").html();
   contact_me_template = Handlebars.compile(source);
   
+  source = $('#footer-template').html();
+  footer_template = Handlebars.compile(source);
     
   /* This script will change the active class in the navbar accordingly where you click
   ------------------------------------------------------------------------------------*/
     $('.home').click(function(){
+
       showTemplate(home_template, db);
+      showTemplateFooter(footer_template, db);
 
       $(".navbar .active").removeClass("active");
       $(".home").addClass("active");
@@ -58,6 +67,7 @@ $(document).ready(function(){
 
         // displays the photos template
         showTemplate(album_template, current_album);
+        showTemplateFooter(footer_template, db);
 
           // add an on click al all the photo thumbnails
           // which displays the photo in a modal popup
@@ -76,12 +86,21 @@ $(document).ready(function(){
             console.log(current_photo);
             // displays the single photo template
             showTemplate(single_photo_template, current_photo);
+            showTemplateFooter(footer_template, db);
+
+            $(".voltar").click(function(){
+            
+              $(".webprojects").click();
+
+            });
+
           });
         });
 
       $(".about-me").click(function(){
 
         showTemplate(about_me_template, db);
+        showTemplateFooter(footer_template, db);
 
         $(".navbar .active").removeClass("active");
         $(".about-me").addClass("active");
@@ -94,6 +113,7 @@ $(document).ready(function(){
 
 
     showTemplate(about_me_template, db);
+    showTemplateFooter(footer_template, db);
 
     $(".navbar .active").removeClass("active");
     $(".about-me").addClass("active");
@@ -103,6 +123,7 @@ $(document).ready(function(){
   $(".webprojects, .gameprojects").click(function(){
       
       showTemplate(my_projects_template, db);
+      showTemplateFooter(footer_template, db);
 
       $(".navbar .active").removeClass("active");
       $(".my-projects").addClass("active");
@@ -121,6 +142,7 @@ $(document).ready(function(){
 
         // displays the photos template
         showTemplate(album_template, current_album);
+        showTemplateFooter(footer_template, db);
 
           // add an on click al all the photo thumbnails
           // which displays the photo in a modal popup
@@ -139,6 +161,14 @@ $(document).ready(function(){
             console.log(current_photo);
             // displays the single photo template
             showTemplate(single_photo_template, current_photo);
+            showTemplateFooter(footer_template, db);
+
+            $(".voltar").click(function(){
+            
+              $(".webprojects").click();
+
+            });
+
           });
       });
   });
@@ -157,11 +187,19 @@ $(document).ready(function(){
       
       // displays the single photo template
       showTemplate(single_photo_template, current_photo);
+      showTemplateFooter(footer_template, db);
+
+      $(".voltar").click(function(){
+      
+        $(".webprojects").click();
+
+      });
     });
 
   $(".contact-me").click(function(){
 
     showTemplate(contact_me_template, db);
+    showTemplateFooter(footer_template, db);
 
     $(".navbar .active").removeClass("active");
     $(".contact-me").addClass("active");
@@ -170,5 +208,13 @@ $(document).ready(function(){
   /* END Script to change navbar
   ------------------------------------------------------------------------------------*/
   $(".home").click();
+
+  // Gallery effects
+  $("body").on('mouseenter', '.thumbnail', function(){
+    $(this).animate({marginTop: "-10px"});
+  })
+  .on('mouseleave', '.thumbnail', function(){
+    $(this).animate({marginTop: "+10px"});
+  });
 
 });
