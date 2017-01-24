@@ -4,6 +4,7 @@ body{
 	padding-top: 55px;
 	background-color:#ECECEC;
 	font-family: 'Droid Sans', sans-serif, arial, helvetica;
+	overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6{
 	color: #282F44;
@@ -32,13 +33,16 @@ p{
 	color: #F5D061; /*Slightly Yellow*/
 }
 .bg-1 h2, .bg-1 h3, .bg-1 h4, .bg-1 h5, .bg-1 h6{
-	color: #E6AF2E;
+	color: #E6AF2E; /* Strong yellow*/
 }
 .bg-1 strong{
 	color: #F5D061; /*Slightly Yellow*/
 }
 .bg-1 p{
 	color: #ececec;
+}
+.bg-1 .album-thumbnail h1, .bg-1 .album-thumbnail h2, .bg-1 .album-thumbnail h3, .bg-1 .album-thumbnail h4, .bg-1 .album-thumbnail h5, .bg-1 .album-thumbnail h6, .bg-1 .album-thumbnail` p{
+	color: # !important;
 }
 .bg-2{
 	background-color:#ECECEC; /* Grey */
@@ -59,7 +63,7 @@ p{
 	padding: 35px 0px;
 }
 /* 
-	= Web icon colors
+	= Web icon and head pages
 ----------------------------------------------*/
 .aboutmeicon{
 	background-color: #ECECEC;
@@ -72,6 +76,48 @@ p{
     	 -o-box-shadow: 2px 2px 0px #ececec;
 }
 
+.head-page-main{
+	width: 100%
+}
+.head-page-main h2{
+	font-size: 2.5em;
+}
+.head-page-icon{
+	background-color:#ECECEC;
+	font-size: 70px;
+	color: #282F44;
+	padding: 25px;
+	border-radius: 50%;
+	border: 5px solid #282F44;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	    -ms-border-radius: 50%;
+	     -o-border-radius: 50%;
+    box-shadow: 2px 2px 0px #ECECEC;
+    -webkit-box-shadow: 2px 2px 0px #ECECEC;
+       -moz-box-shadow: 2px 2px 0px #ECECEC;
+    	-ms-box-shadow: 2px 2px 0px #ECECEC;
+    	 -o-box-shadow: 2px 2px 0px #ECECEC;
+}
+
+/*
+	= Galery adjustments
+------------------------------------------------*/
+.gallery, .single-photo-thumbnail{
+	box-shadow: 5px 5px 4px #adadad;
+    -webkit-box-shadow: 5px 5px 4px #adadad;
+       -moz-box-shadow: 5px 5px 4px #adadad;
+    	-ms-box-shadow: 5px 5px 4px #adadad;
+    	 -o-box-shadow: 5px 5px 4px #adadad;
+}
+.gallery:hover , .single-photo-thumbnail:hover{
+	box-shadow: 10px 10px 4px #adadad;
+    -webkit-box-shadow: 10px 10px 4px #adadad;
+       -moz-box-shadow: 10px 10px 4px #adadad;
+    	-ms-box-shadow: 10px 10px 4px #adadad;
+    	 -o-box-shadow: 10px 10px 4px #adadad;
+    cursor: pointer;
+}
 /*
 	= Footer icons and navbar adjustments
 ------------------------------------------------*/
