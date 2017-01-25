@@ -11,32 +11,32 @@
     var db = {
       images:[
          {
-           src: "images/img_6.jpg",
+           src: "images/Slideshow-img.jpg",
            title: "Shopping Center Magna Plaza Amsterdam 2014",
            author: "Tuxyso",
            },
          {
-           src: "images/img_7.jpg", 
+           src: "images/Slideshow-img.jpg", 
            title:"The Earth seen from Apollo 17",
            author:"Ed g2s"
            },
          {
-           src:"images/img_8.jpg",
+           src:"images/Slideshow-img.jpg",
            title: "horse nebula",
            author: "John Smith",
            },
          {
-           src:"images/img_9.jpg",
+           src:"images/Slideshow-img.jpg",
            title:"wwii woman worker",
            author:"Another author",
         },
          {
-           src:"images/img_10.jpg",
+           src:"images/Slideshow-img.jpg",
            title:"Lijiang Yunnan China Naxi people carrying baskets-",
            author:"Wikimedia Commons",
            },
          {
-           src:"images/img_11.jpg",
+           src:"images/Slideshow-img.jpg",
            title:"Marco's house",
            author:"Wikimedia Commons",
            }
@@ -152,37 +152,37 @@
       albums : [
         {
           name : "Travels", 
-          thumbnail : "images/img_1.jpg",
+          thumbnail : "images/gallery-thumb.jpg",
           description: "Web design Projects",
           photos : [
             { 
-              src : "images/img_1.jpg",
+              src : "images/single-img.jpg",
               title : "grafitti", 
               description : "some derelict appartments with grafitti",
               moreimgs: [
                 {
-                  thumb: "images/img_1.jpg",
+                  thumb: "images/mini-thumbnail.jpg",
                 },
                 {
-                  thumb: "images/img_2.jpg",
+                  thumb: "images/mini-thumbnail.jpg",
                 },
                 {
-                  thumb: "images/img_3.jpg",
+                  thumb: "images/mini-thumbnail.jpg",
                 }
               ]
             }, 
             { 
-              src : "images/img_6.jpg",
+              src : "images/single-img.jpg",
               title : "fountain", 
               description : "a huge dragon fountain"
             }, 
             { 
-              src : "images/img_7.jpg",
+              src : "images/single-img.jpg",
               title : "tower", 
               description : "a colourful tower block"
             }, 
             { 
-              src : "images/img_8.jpg",
+              src : "images/single-img.jpg",
               title : "walkways", 
               description : "an interesting interior"
             } 
@@ -190,21 +190,21 @@
         },
         {
           name : "Equipment", 
-          thumbnail : "images/img_4.jpg",
+          thumbnail : "images/gallery-thumb.jpg",
           description: "Web design Projects",
           photos : [
             { 
-              src : "images/img_4.jpg",
+              src : "images/single-img.jpg",
               title : "syths", 
               description : "all workshops should aspire to being this tidy"
             }, 
             { 
-              src : "images/img_9.jpg",
+              src : "images/single-img.jpg",
               title : "helmet", 
               description : "a sci-fi helmet"
             }, 
             { 
-              src : "images/img_12.jpg",
+              src : "images/single-img.jpg",
               title : "drums", 
               description : "a rather nice drum kit"
             }  
@@ -212,21 +212,21 @@
         },
         {
           name : "English Winter", 
-          thumbnail : "images/img_17.jpg",
+          thumbnail : "images/gallery-thumb.jpg",
           description: "Web design Projects",
           photos : [
             { 
-              src : "images/img_16.jpg",
+              src : "images/single-img.jpg",
               title : "dog in the snow", 
               description : "looks like he needs that jacket"
             }, 
             { 
-              src : "images/img_17.jpg",
+              src : "images/single-img.jpg",
               title : "winter", 
               description : "a snowy scene in a park"
             }, 
             { 
-              src : "images/img_18.jpg",
+              src : "images/single-img.jpg",
               title : "frosty pond", 
               description : "some ducks feeling cold"
             } 
@@ -234,21 +234,21 @@
         },
         {
           name : "English Winter", 
-          thumbnail : "images/img_17.jpg",
+          thumbnail : "images/gallery-thumb.jpg",
           description: "Web design Projects",
           photos : [
             { 
-              src : "images/img_16.jpg",
+              src : "images/single-img.jpg",
               title : "dog in the snow", 
               description : "looks like he needs that jacket"
             }, 
             { 
-              src : "images/img_17.jpg",
+              src : "images/single-img.jpg",
               title : "winter", 
               description : "a snowy scene in a park"
             }, 
             { 
-              src : "images/img_18.jpg",
+              src : "images/single-img.jpg",
               title : "frosty pond", 
               description : "some ducks feeling cold"
             } 
