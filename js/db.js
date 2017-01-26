@@ -11,44 +11,33 @@
     var db = {
       images:[
          {
-           src: "images/Slideshow-img.jpg",
-           title: "Shopping Center Magna Plaza Amsterdam 2014",
-           author: "Tuxyso",
+           src: "images/Slideshow-img2.jpg",
+           title: "Developed to offer products for special clients of Reanult",
+           author: "Hotsite Reanult",
            },
          {
-           src: "images/Slideshow-img.jpg", 
-           title:"The Earth seen from Apollo 17",
-           author:"Ed g2s"
+           src: "images/Slideshow-img3.jpg", 
+           title:"Re-design from customer page of Tickets For Fun company",
+           author:"Customer service"
            },
          {
-           src:"images/Slideshow-img.jpg",
-           title: "horse nebula",
-           author: "John Smith",
+           src:"images/Slideshow-img1.jpg",
+           title: "Customer service page presented by different devices",
+           author:"Customer service"
            },
          {
-           src:"images/Slideshow-img.jpg",
-           title:"wwii woman worker",
-           author:"Another author",
-        },
-         {
-           src:"images/Slideshow-img.jpg",
-           title:"Lijiang Yunnan China Naxi people carrying baskets-",
-           author:"Wikimedia Commons",
-           },
-         {
-           src:"images/Slideshow-img.jpg",
-           title:"Marco's house",
-           author:"Wikimedia Commons",
-           }
-
-         ],
+           src:"images/Slideshow-img4.jpg",
+           title:"I've been working as a Web Designer over 4 years and I'm constantly learning and updating myself to provide always the best for my clients",
+           author:"Web Designer",
+        }
+      ],
       section2:[
          {
-          title1:"Welcome to my online Portfolio!",
-          content1:"Here you will find some works I've made in the past, some works I'm producing and some works in my schedule.",
-          content2:"I hope you enjoy!",
-          title2:"Latest projects",
-          content3: "You can check out my Jobs bellow",
+          title1:"Welcome to my Portfolio!<br />I'm John Nascimento!",
+          content1:"You'll find out some of my professional and personal projects.",
+          content2:"I'm really pleased to see you and I truly hope we can work together.",
+          title2:"Projects",
+          content3: "Check out some of my projects bellow",
           srcjohn: "images/img_11.jpg",
           }
         ],

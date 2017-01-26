@@ -138,6 +138,7 @@
                 <div class="item {{#if @first}}active{{/if}}">
                  <img class="carousel-img" src="{{src}}" alt=""/> 
                 <div class="carousel-caption">
+                  <p>{{author}}</p>
                   <p>{{title}}</p>
                 </div>
               </div> <!-- / carousel item -->
@@ -163,7 +164,7 @@
     <div class="row bg-size bg-1">
     {{#each section2}}
       <div class="col-xs-12 col-md-12 text-center">
-        <h1>{{title1}}</h1>
+        <h1>{{{title1}}}</h1>
         <p class="lead">{{content1}}</p>
         <p>{{content2}}</p>
       </div>
@@ -206,16 +207,16 @@
       </div>
 
       {{#each skillNqualification}}
-      <div class="col-xs-12 col-sm-12 col-md-4">
-        <div class="aboutmeicon img-circle img-thumbnail">
-          <span class="{{webicon}}"></span>
+        <div class="col-xs-12 col-sm-12 col-md-4 bg-size3 aboutmehome">
+          <div class="aboutmeicon img-circle img-thumbnail">
+            <span class="{{webicon}}"></span>
+          </div>
+          <h3>{{title}}</h3>
+          <p align="justify">{{{description}}}</p>
+          <p class="text-center">
+            <a href="#" class="btn btn-default about-me">Read more »</a>
+          </p>
         </div>
-        <h3>{{title}}</h3>
-        <p align="justify">{{{description}}}</p>
-        <p class="text-center">
-          <a href="#" class="btn btn-default about-me">Read more »</a>
-        </p>
-      </div>
       {{/each}}
     </div>
     
