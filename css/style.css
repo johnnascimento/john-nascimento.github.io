@@ -54,13 +54,16 @@ p{
 	border-bottom: 1px solid #222222;
 }
 .bg-size{
-	padding: 70px 0px;
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 .bg-size2{
-	padding: 70px 0px 10px;
+	padding-top: 70px;
+	padding-bottom: 10px;
 }
 .bg-size3{
-	padding: 35px 0px;
+	padding-top: 35px;
+	padding-bottom: 35px;
 }
 /* 
 	= Web icon and head pages
@@ -189,15 +192,43 @@ p{
 }
 .slideshow img.carousel-img {
 	text-align: center;
-	height: 500px;
+	height: auto;
 	margin: 0 auto;
 	overflow: hidden;
 }
 .carousel-inner p{
 	color: #efefef;
-	font-size: 1.4em;
+	font-size: 1.8rem;
 	background-color: rgba(132,132,132,0.7);
-	border-radius: 50%;
+	border-radius: 15%;
+}
+/*Carousel controllers (gradient)
+------------------------------------*/
+.carousel-control.left{
+	background-image: none;
+}
+.carousel-control.left span{
+	background: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+.carousel-control.right{
+	background-image: none;
+}
+.carousel-control.right span{
+	background: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+.carousel-control{
+	color: #444444;
+}
+.carousel-control:hover{
+	color: #444444;
 }
 .center-cropped {
 	width: 100%;
@@ -209,6 +240,7 @@ p{
 #skillNqualification .img-thumbnail{
 	padding:40px;
 }
+
 .footer {
     bottom: 0;
     width: 100%;
@@ -239,18 +271,10 @@ p{
 	height:175px;
 }
 
-
-/*Carousel (gradient)
-------------------------------------*/
-.carousel-control.left{
-	background-image: none;
-}
-.carousel-control.right{
-	background-image: none;
-}
-.carousel-control{
-	color: #444444;
-}
-.carousel-control:hover{
-	color: #444444;
-}
+/*
+	= Media queries
+--------------------------------------*/
+@media (min-width: 768px)
+.aboutmehome {
+	border-bottom: 1px solid #E6AF2E;
+	}
