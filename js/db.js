@@ -44,48 +44,18 @@
       skillNqualification: [
         {
           webicon: "fa fa-code fa-4x",
-          title: "Web Development",
+          title: "Development",
           description: "Web Development with <strong>HTML(5), CSS(3) and Javascript / Jquery</strong>. I've already produced websites using the <strong>Bootstrap framework and Handlebars template</strong>. I also have experience with <strong>Joolma and Wordpress</strong>. To develop without problem during the process I also use <strong>Github</strong> to control the file versions and preserve the development.",
         },
         {
           webicon: "fa fa-pencil fa-4x",
-          title: "Web Development",
+          title: "Design",
           description: "I also use others technologies to improve the result of my projects. Some of them are: <strong>Dreamweaver, Sublime, Photoshop, Gimp, Illustrator, 3D Maya and Mudbox (3D)</strong>.",
         },
         {
           webicon: "fa fa-graduation-cap fa-4x",
-          title: "Web Development",
-          description: "My development is due to my <strong>degree in IT management</strong> and my <strong>certification in Computer Graphics focused in Game Design</strong>. Besides this qualifications, I also have a bunch of courses reagrding to web development and design as well as my <strong>experience of 4 years in the area acting as a Web Designer and Web Analyst</strong>.",
-          }
-        ],
-      latestprojects: [
-        {
-          title: "Street art",
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices arcu sit amet condimentum rhoncus. Phasellus vel fringilla ante, eu maximus arcu.",
-          src: "images/img_1.jpg",
-          imgdescription: "img description",
-          imgtitle: "img title"
-        },
-        {
-          title: "On the street",
-          description: "Quisque rhoncus eros at neque eleifend tincidunt. Etiam aliquam posuere quam, eu finibus massa accumsan eget. Suspendisse porttitor, massa",
-          src: "images/img_5.jpg",
-          imgdescription: "img description",
-          imgtitle: "img title"
-        },
-        {
-          title: "Some food",
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices arcu sit amet condimentum rhoncus. Phasellus vel fringilla ante, eu maximus arcu.",
-          src: "images/img_3.jpg",
-          imgdescription: "img description",
-          imgtitle: "img title"
-        },
-        {
-          title: "Last image",
-          description: "Quisque rhoncus eros at neque eleifend tincidunt. Etiam aliquam posuere quam, eu finibus massa accumsan eget. Suspendisse porttitor, massa",
-          src: "images/img_5.jpg",
-          imgdescription: "img description",
-          imgtitle: "img title"
+          title: "Professional",
+          description: "I have a <strong>degree in IT management</strong> and a <strong>certification in Computer Graphics focused in Game Design</strong>. Besides this qualifications, I also have a bunch of courses reagrding to web development and design as well as my <strong>experience of 4 years in the area acting as a Web Designer and Web Analyst</strong>.",
           }
         ],
       aboutme: [
@@ -93,11 +63,25 @@
           about: "About me",
           briefdescription: "John Nascimento",
           src: "images/img_5.jpg",
-          whoiam: "Who I am?",
+          whoiam: "Who am I?",
           whodescription: "My name is John Lenon Nascimento da Silva, I was born in 1991 and I'm married!<br />I have a degree in IT management by Faculdade Sao Paulo<br />and a certification in Computer Graphics by SAGA (School of Art Game and Animation).<br />I have over 3 years of experience as a Web Designer and 5 years working in IT area.",
-          firstcolumn: "Life",
-          secondcolumn: "Skills",
-          thirdcolumn: "Qualifications",
+          skillNqualification: [
+            {
+              webicon: "fa fa-graduation-cap fa-4x",
+              title: "Web Design Career",
+              description: "I'm a Web Designer professional, graduated in <strong>degree in IT management</strong> with <strong>certification in Computer Graphics focused in Game Design</strong> and a variety of courses related to web development and design.<br />I have over 4 years of experiece and I've already produced several projects since I started my Web Design career and some of this projects can be seen throught this portfolio online.",
+            },
+            {
+              webicon: "fa fa-code fa-4x",
+              title: "Development",
+              description: "As a Web Designer I have experience with the following programming languages, frameworks and CMS: <strong>HTML(5), CSS(3) and Javascript / Jquery</strong>. <strong>Bootstrap framework and Handlebars template</strong>. <strong>Joolma and Wordpress</strong>.",
+            },
+            {
+              webicon: "fa fa-pencil fa-4x",
+              title: "Design",
+              description: "I also use others technologies to improve the result of my projects: <strong>Dreamweaver, Sublime, Photoshop, Gimp, Illustrator, 3D Maya and Mudbox (3D)</strong>. As my version control system I also use <strong>Github</strong>.",
+              }
+            ],
           wherefindme: "Where to find me?",
           wheredescription: "I've been living in Ireland since 2016 when I came to improve my english skill.<br />If you wish to meet me, just call or send me a message and I'll be happy to talk with you about your project or issue that needs maintenance.",
           footer: "How to contact me?",
@@ -140,9 +124,9 @@
         ],
       albums : [
         {
-          name : "Travels", 
+          name : "Web Design Projects", 
           thumbnail : "images/gallery-thumb.jpg",
-          description: "Web design Projects",
+          description: "Landing pages, Hotsites, Mockups, Logo Design and many other things you can find out here",
           photos : [
             { 
               src : "images/single-img.jpg",
@@ -178,9 +162,9 @@
           ]
         },
         {
-          name : "Equipment", 
+          name : "Game Design projects", 
           thumbnail : "images/gallery-thumb.jpg",
-          description: "Web design Projects",
+          description: "Character design, concept Vehicles and weapons, level design and many more you'll see right here",
           photos : [
             { 
               src : "images/single-img.jpg",
@@ -200,9 +184,9 @@
           ]
         },
         {
-          name : "English Winter", 
+          name : "Personal projects", 
           thumbnail : "images/gallery-thumb.jpg",
-          description: "Web design Projects",
+          description: "You can see some of my personal projects either in progress or finished just here",
           photos : [
             { 
               src : "images/single-img.jpg",
@@ -222,9 +206,9 @@
           ]
         },
         {
-          name : "English Winter", 
+          name : "Digital and traditional painting", 
           thumbnail : "images/gallery-thumb.jpg",
-          description: "Web design Projects",
+          description: "C'mon, have a sit! I'll show you some of my productions in digital and traditional painting field. I hope you enjoy",
           photos : [
             { 
               src : "images/single-img.jpg",

@@ -78,6 +78,20 @@ p{
     	-ms-box-shadow: 2px 2px 0px #ececec;
     	 -o-box-shadow: 2px 2px 0px #ececec;
 }
+.aboutmepage .aboutmehome .aboutmeicon{
+    background-color: #282f44;
+    color: #ececec;
+    border: 5px solid #ececec;
+    box-shadow: 2px 2px 0px #ececec;
+    -webkit-box-shadow: 2px 2px 0px #282f44;
+       -moz-box-shadow: 2px 2px 0px #282f44;
+        -ms-box-shadow: 2px 2px 0px #282f44;
+         -o-box-shadow: 2px 2px 0px #282f44;
+}
+.aboutmehome {
+	border-bottom: none;
+	height: 400px;
+}
 
 .head-page-main{
 	width: 100%
@@ -199,8 +213,12 @@ p{
 .carousel-inner p{
 	color: #efefef;
 	font-size: 1.8rem;
-	background-color: rgba(132,132,132,0.7);
-	border-radius: 15%;
+}
+.bg-carousel-title{
+	margin: 0 auto;
+	width: 40%;
+	background-color: rgba(100,100,100,0.8);
+	border-radius: 1%;
 }
 /*Carousel controllers (gradient)
 ------------------------------------*/
@@ -274,7 +292,13 @@ p{
 /*
 	= Media queries
 --------------------------------------*/
-@media (min-width: 768px)
-.aboutmehome {
-	border-bottom: 1px solid #E6AF2E;
+@media (max-width: 990px){
+	.aboutmehome {
+		border-bottom: 1px solid #E6AF2E;
+		height: auto;
 	}
+	.bg-carousel-title p{
+		font-size: 1em;
+	}
+
+}
