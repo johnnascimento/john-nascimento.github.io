@@ -50,7 +50,7 @@
         {
           webicon: "fa fa-pencil fa-4x",
           title: "Design",
-          description: "I also use others technologies to improve the result of my projects. Some of them are: <strong>Dreamweaver, Sublime, Photoshop, Gimp, Illustrator, 3D Maya and Mudbox (3D)</strong>.",
+          description: "I also use others technologies to improve the result of my projects. Some of them are: <strong>Dreamweaver, Sublime, Photoshop, Gimp, Illustrator, 3D Maya and Mudbox (3D)</strong>. Some tools I just use to produce some personal projects like Unreal Engine 4 and UDK, that are used to develop Games.",
         },
         {
           webicon: "fa fa-graduation-cap fa-4x",
@@ -62,7 +62,7 @@
         {
           about: "About me",
           briefdescription: "John Nascimento",
-          src: "images/img_5.jpg",
+          src: "images/favicon_icon/icon-jl.png",
           whoiam: "Who am I?",
           whodescription: "My name is John Lenon Nascimento da Silva, I was born in 1991 and I'm married!<br />I have a degree in IT management by Faculdade Sao Paulo<br />and a certification in Computer Graphics by SAGA (School of Art Game and Animation).<br />I have over 3 years of experience as a Web Designer and 5 years working in IT area.",
           skillNqualification: [
@@ -129,36 +129,50 @@
           description: "Landing pages, Hotsites, Mockups, Logo Design and many other things you can find out here",
           photos : [
             { 
-              src : "images/single-img.jpg",
-              title : "grafitti", 
-              description : "some derelict appartments with grafitti",
+              src : "images/web_design_projects/anitta/2015/site_anitta-2015_1st.jpg",
+              title : "Web Page Anitta 2015", 
+              description : "Page developed to promote the concert of the singer Anitta in Brazil by Tickets For Fun company in 2015.",
               moreimgs: [
                 {
-                  thumb: "images/mini-thumbnail.jpg",
-                },
-                {
-                  thumb: "images/mini-thumbnail.jpg",
-                },
-                {
-                  thumb: "images/mini-thumbnail.jpg",
+                  thumb: "images/web_design_projects/anitta/2015/site_anitta-2015_2nd.jpg",
                 }
               ]
             }, 
             { 
-              src : "images/single-img.jpg",
-              title : "fountain", 
-              description : "a huge dragon fountain"
+              src : "images/web_design_projects/anitta/2016/site_anitta_2016.jpg",
+              title : "Web Page Anitta 2016", 
+              description : "This project was developed to promote the concert of the singer Anitta in Brazil by Tickets For Fun company in 2016."
             }, 
             { 
-              src : "images/single-img.jpg",
-              title : "tower", 
-              description : "a colourful tower block"
+              src : "images/web_design_projects/festival_piaui/site_festival_piaui_defined.jpg",
+              title : "Festival Piaui", 
+              description : "This web page was developed to promote Festival Piaui sales. Firstly was developed a mockup in order to offer the best of this product and after some adjustments the final project was resolved.",
+              moreimgs: [
+                {
+                  thumb: "images/web_design_projects/festival_piaui/site_festival_piaui_my_model.jpg",
+                }
+              ]
             }, 
             { 
-              src : "images/single-img.jpg",
-              title : "walkways", 
-              description : "an interesting interior"
-            } 
+              src : "images/web_design_projects/flip/2015/site_flip_2015.jpg",
+              title : "Flip Web Page 2015", 
+              description : "The design of this webpage was developed by FLIP's team and I was responsible for programming based on the mockup developed by them. To develop this page I've used HTML, CSS, Js, Photoshop, and Dreamweaver."
+            }, 
+            { 
+              src : "images/web_design_projects/flip/2016/site_flip_2016.jpg",
+              title : "Flip Web Page 2016", 
+              description : "The design of this webpage was developed by FLIP's team and I was responsible for programming based on the mockup developed by them. To develop this page I've used HTML, CSS, Js, Photoshop, and Dreamweaver. This page followed the same idea of the site developed in 2015, but this time they used other color palette."
+            }, 
+            { 
+              src : "images/web_design_projects/fuerza_bruta/site_fuerza_bruta.jpg",
+              title : "Fuerza Bruta Wayra", 
+              description : "Developing this page was used HTML, CSS, Js, Photoshop, Color Scheme palette and Sublime."
+            }, 
+            { 
+              src : "images/web_design_projects/lollapalooza/site_lollapalooza.jpg",
+              title : "Lollapalooza 2016", 
+              description : "Lollapalooza Hotsite was developed to promote the Lolla Sales and to present all information of this concert at the same place but organized. The layout was developed by marketing team of Tickets For Fun and I was the frontender responsible for programming following the mockup provided. The tools used to develop was HTML, CSS, Js, Bootstrap, Youtube, Photoshop, Dreamweaver and Illustrator."
+            }, 
           ]
         },
         {
