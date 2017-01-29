@@ -126,6 +126,8 @@ p{
        -moz-box-shadow: 5px 5px 4px #adadad;
     	-ms-box-shadow: 5px 5px 4px #adadad;
     	 -o-box-shadow: 5px 5px 4px #adadad;
+    -webkit-transition: all 0.3s ease-in-out;
+    		transition: all 0.3s ease-in-out;
 }
 .gallery:hover , .single-photo-thumbnail:hover{
 	box-shadow: 10px 10px 4px #adadad;
@@ -134,6 +136,7 @@ p{
     	-ms-box-shadow: 10px 10px 4px #adadad;
     	 -o-box-shadow: 10px 10px 4px #adadad;
     cursor: pointer;
+            transform: translate(0,-3px);
 }
 /*
 	= Footer icons and navbar adjustments

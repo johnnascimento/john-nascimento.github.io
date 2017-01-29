@@ -209,12 +209,12 @@ $(document).ready(function(){
   ------------------------------------------------------------------------------------*/
   $(".home").click();
 
-  // Gallery effects
+  /* Gallery effects
   $("body").on('mouseenter', '.thumbnail', function(){
     $(this).animate({marginTop: "-10px"});
   })
   .on('mouseleave', '.thumbnail', function(){
     $(this).animate({marginTop: "+10px"});
-  });
+  });*/
 
 });

@@ -11,22 +11,22 @@
     var db = {
       images:[
          {
-           src: "images/Slideshow-img2.jpg",
+           src: "images/slideshow/Slideshow-img2.jpg",
            title: "Developed to offer products for special clients of Reanult",
            author: "Hotsite Reanult",
            },
          {
-           src: "images/Slideshow-img3.jpg", 
+           src: "images/slideshow/Slideshow-img3.jpg", 
            title:"Re-design from customer page of Tickets For Fun company",
            author:"Customer service"
            },
          {
-           src:"images/Slideshow-img1.jpg",
+           src:"images/slideshow/Slideshow-img1.jpg",
            title: "Customer service page presented by different devices",
            author:"Customer service"
            },
          {
-           src:"images/Slideshow-img4.jpg",
+           src:"images/slideshow/Slideshow-img4.jpg",
            title:"I've been working as a Web Designer over 4 years and I'm constantly learning and updating myself to provide always the best for my clients",
            author:"Web Designer",
         }
@@ -125,7 +125,7 @@
       albums : [
         {
           name : "Web Design Projects", 
-          thumbnail : "images/gallery-thumb.jpg",
+          thumbnail : "images/web_design_projects/site_anitta_thumb.jpg",
           description: "Landing pages, Hotsites, Mockups, Logo Design and many other things you can find out here",
           photos : [
             { 
@@ -163,7 +163,7 @@
         },
         {
           name : "Game Design projects", 
-          thumbnail : "images/gallery-thumb.jpg",
+          thumbnail : "images/game_design_projects/site_renault_thumb.jpg",
           description: "Character design, concept Vehicles and weapons, level design and many more you'll see right here",
           photos : [
             { 
@@ -185,7 +185,7 @@
         },
         {
           name : "Personal projects", 
-          thumbnail : "images/gallery-thumb.jpg",
+          thumbnail : "images/personal_projects/site_flip_-thumb.jpg",
           description: "You can see some of my personal projects either in progress or finished just here",
           photos : [
             { 
@@ -207,7 +207,7 @@
         },
         {
           name : "Digital and traditional painting", 
-          thumbnail : "images/gallery-thumb.jpg",
+          thumbnail : "images/digital_painting/site_anitta_thumb.jpg",
           description: "C'mon, have a sit! I'll show you some of my productions in digital and traditional painting field. I hope you enjoy",
           photos : [
             { 
