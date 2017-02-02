@@ -49,11 +49,13 @@ $(document).ready(function(){
 
       $(".navbar .active").removeClass("active");
       $(".home").addClass("active");
+      $("body").scrollTop(0);
 
       $(".album-thumbnail").click(function(){
 
         $(".navbar .active").removeClass("active");
         $(".my-projects").addClass("active");
+        $("body").scrollTop(0);
         // get the index (position in the array)
         // of the album we clicked on
         // "this" is the element that was clicked on
@@ -66,8 +68,15 @@ $(document).ready(function(){
         current_album = db.albums[index];
 
         // displays the photos template
-        showTemplate(album_template, current_album);
-        showTemplateFooter(footer_template, db);
+
+        // This condition will control what can be visit during the maintenance
+        if (index != 0){
+          alert('Pagina em desenvolvimento!');
+        }
+        else{
+          showTemplate(album_template, current_album);
+          showTemplateFooter(footer_template, db);
+        };
 
           // add an on click al all the photo thumbnails
           // which displays the photo in a modal popup
@@ -88,9 +97,12 @@ $(document).ready(function(){
             showTemplate(single_photo_template, current_photo);
             showTemplateFooter(footer_template, db);
 
+            $("body").scrollTop(0);
+
             $(".voltar").click(function(){
             
               $(".webprojects").click();
+              $("body").scrollTop(0);
 
             });
 
@@ -104,6 +116,7 @@ $(document).ready(function(){
 
         $(".navbar .active").removeClass("active");
         $(".about-me").addClass("active");
+        $("body").scrollTop(0);
           
       });
     });
@@ -111,12 +124,12 @@ $(document).ready(function(){
 
   $(".about-me").click(function(){
 
-
     showTemplate(about_me_template, db);
     showTemplateFooter(footer_template, db);
 
     $(".navbar .active").removeClass("active");
     $(".about-me").addClass("active");
+    $("body").scrollTop(0);
       
   });
 
@@ -127,6 +140,7 @@ $(document).ready(function(){
 
       $(".navbar .active").removeClass("active");
       $(".my-projects").addClass("active");
+      $("body").scrollTop(0);
 
       $(".album-thumbnail").click(function(){
         // get the index (position in the array)
@@ -141,13 +155,20 @@ $(document).ready(function(){
         current_album = db.albums[index];
 
         // displays the photos template
-        showTemplate(album_template, current_album);
-        showTemplateFooter(footer_template, db);
+        if (index != 0){
+          alert('Pagina em desenvolvimento!');
+        }
+        else{
+          showTemplate(album_template, current_album);
+          showTemplateFooter(footer_template, db);
+        }
+        $("body").scrollTop(0);
 
           // add an on click al all the photo thumbnails
           // which displays the photo in a modal popup
           $(".single-photo-thumbnail").click(function (){
             console.log('Is it working?');
+
             // get the index (position in the array)
             // of the photo we clicked on
             // "this" is the element that was clicked on
@@ -163,9 +184,12 @@ $(document).ready(function(){
             showTemplate(single_photo_template, current_photo);
             showTemplateFooter(footer_template, db);
 
+            $("body").scrollTop(0);
+
             $(".voltar").click(function(){
             
               $(".webprojects").click();
+              $("body").scrollTop(0);
 
             });
 
@@ -174,6 +198,7 @@ $(document).ready(function(){
   });
 
   $(".single-photo-thumbnail").click(function (){
+
       // get the index (position in the array)
       // of the photo we clicked on
       // "this" is the element that was clicked on
@@ -189,9 +214,12 @@ $(document).ready(function(){
       showTemplate(single_photo_template, current_photo);
       showTemplateFooter(footer_template, db);
 
+      $("body").scrollTop(0);
+
       $(".voltar").click(function(){
       
         $(".webprojects").click();
+        $("body").scrollTop(0);
 
       });
     });
@@ -203,18 +231,19 @@ $(document).ready(function(){
 
     $(".navbar .active").removeClass("active");
     $(".contact-me").addClass("active");
+    $("body").scrollTop(0);
 
   });
   /* END Script to change navbar
   ------------------------------------------------------------------------------------*/
   $(".home").click();
 
-  // Gallery effects
+  /* Gallery effects
   $("body").on('mouseenter', '.thumbnail', function(){
     $(this).animate({marginTop: "-10px"});
   })
   .on('mouseleave', '.thumbnail', function(){
     $(this).animate({marginTop: "+10px"});
-  });
+  });*/
 
 });
