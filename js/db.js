@@ -125,7 +125,7 @@
       albums : [
         {
           name : "Web Design Projects", 
-          thumbnail : "images/web_design_projects/site_anitta_thumb.jpg",
+          thumbnail : "images/web_design_projects/site_web_design_thumb.jpg",
           description: "Landing pages, Hotsites, Mockups, Logo Design and many other things you can find out here",
           photos : [
             { 
@@ -177,7 +177,7 @@
         },
         {
           name : "Game Design projects", 
-          thumbnail : "images/game_design_projects/site_renault_thumb.jpg",
+          thumbnail : "images/game_design_projects/site_game_projects_thumb.jpg",
           description: "Character design, concept Vehicles and weapons, level design and many more you'll see right here",
           photos : [
             { 
@@ -199,7 +199,7 @@
         },
         {
           name : "Personal projects", 
-          thumbnail : "images/personal_projects/site_flip_-thumb.jpg",
+          thumbnail : "images/personal_projects/site_personal_projects_thumb.jpg",
           description: "You can see some of my personal projects either in progress or finished just here",
           photos : [
             { 
@@ -221,7 +221,7 @@
         },
         {
           name : "Digital and traditional painting", 
-          thumbnail : "images/digital_painting/site_anitta_thumb.jpg",
+          thumbnail : "images/digital_painting/site_digital_painting_-thumb.jpg",
           description: "C'mon, have a sit! I'll show you some of my productions in digital and traditional painting field. I hope you enjoy",
           photos : [
             { 

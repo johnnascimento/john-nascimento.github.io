@@ -231,9 +231,10 @@ p{
 .carousel-control.left span{
 	background: #ffffff;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 5px;
+    width: 60px;
+    height: 60px;
+    padding: 12px;
+    border: 2px solid #282F44;
 }
 .carousel-control.right{
 	background-image: none;
@@ -241,9 +242,10 @@ p{
 .carousel-control.right span{
 	background: #ffffff;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 5px;
+    width: 60px;
+    height: 60px;
+    padding: 12px;
+    border: 2px solid #282F44;
 }
 .carousel-control{
 	color: #444444;
@@ -300,8 +302,18 @@ p{
 		border-bottom: 1px solid #E6AF2E;
 		height: auto;
 	}
+	.carousel-indicators {
+		display: none;
+	}
 	.bg-carousel-title p{
 		font-size: 1em;
+		display: none;
+	}
+	.glyphicon{
+		line-height: 1.5;
+	}
+	.bg-carousel-title{
+		background-color: transparent;
 	}
 
 }
