@@ -1,7 +1,7 @@
 /*
   This script will fill out the blank spots in html file
 */
-  var html, source, home_template, about_me_template, contact_me_template, my_projects_template, photo_template, footer_template;
+  var html, source, home_template, about_me_template, contact_me_template, my_projects_template, photo_template, footer_template, current_big_img;
 
   // variables to store the current displayed album and photo
   var current_album = db.albums[0];
@@ -99,6 +99,18 @@ $(document).ready(function(){
 
             $("body").scrollTop(0);
 
+            $(".cropImg").click(
+              function(){
+                current_big_img = $("#big-img").attr("src");
+                console.log(current_big_img);
+
+                $("#big-img").attr("src", $(this).attr("src"));
+                $(this).attr("src", current_big_img);
+
+                console.log("Clicks Working!!!");
+              }
+            );
+
             $(".voltar").click(function(){
             
               $(".webprojects").click();
@@ -186,6 +198,18 @@ $(document).ready(function(){
 
             $("body").scrollTop(0);
 
+            $(".cropImg").click(
+              function(){
+                current_big_img = $("#big-img").attr("src");
+                console.log(current_big_img);
+
+                $("#big-img").attr("src", $(this).attr("src"));
+                $(this).attr("src", current_big_img);
+
+                console.log("Clicks Working!!!");
+              }
+            );
+
             $(".voltar").click(function(){
             
               $(".webprojects").click();
@@ -216,6 +240,18 @@ $(document).ready(function(){
 
       $("body").scrollTop(0);
 
+      $(".cropImg").click(
+        function(){
+          current_big_img = $("#big-img").attr("src");
+          console.log(current_big_img);
+
+          $("#big-img").attr("src", $(this).attr("src"));
+          $(this).attr("src", current_big_img);
+
+          console.log("Clicks Working!!!");
+        }
+      );
+
       $(".voltar").click(function(){
       
         $(".webprojects").click();
@@ -237,13 +273,5 @@ $(document).ready(function(){
   /* END Script to change navbar
   ------------------------------------------------------------------------------------*/
   $(".home").click();
-
-  /* Gallery effects
-  $("body").on('mouseenter', '.thumbnail', function(){
-    $(this).animate({marginTop: "-10px"});
-  })
-  .on('mouseleave', '.thumbnail', function(){
-    $(this).animate({marginTop: "+10px"});
-  });*/
 
 });
