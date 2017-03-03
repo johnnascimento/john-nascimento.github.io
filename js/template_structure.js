@@ -145,7 +145,10 @@ $(document).ready(function(){
       
   });
 
-  $(".webprojects, .gameprojects").click(function(){
+  $(".gameprojects").click(function(){
+	  alert("This section is under maintenance!");
+  });
+  $(".webprojects").click(function(){
       
       showTemplate(my_projects_template, db);
       showTemplateFooter(footer_template, db);

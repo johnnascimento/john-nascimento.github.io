@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, h6{
 	color: #282F44;
 }
 p{
+	font-size: 17px;
 	color: #282F44;
 }
 /* Adjustments section
@@ -90,9 +91,13 @@ p{
 }
 .aboutmehome {
 	border-bottom: none;
-	height: 400px;
+	height: auto;
 }
-
+.aboutmepage  .aboutmehome {
+	margin: 0 auto;
+	border-bottom: 1px solid #d4d4d4;
+	width: 80%;
+}
 .head-page-main{
 	width: 100%
 }
