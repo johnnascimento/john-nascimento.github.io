@@ -145,7 +145,7 @@
 			{ 
               src : "images/web_design_projects/james_tattoo/site_james_tattoo.jpg",
               title : "James Tattoo", 
-              description : "Website developed to present the projects of tattooist James.<br />For this project I've used wordpress platform, HTML, CSS and Javascript programming language.",
+              description : "Website developed to present the projects of James. On this project I've used wordpress platform, HTML, CSS and Javascript programming language.",
 			  srcprojects: "images/favicon_icon/icon-jl.png",
 			  moreimgs: [
                 {
