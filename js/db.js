@@ -139,7 +139,7 @@
             { 
               src : "images/web_design_projects/t4f/site_t4f.jpg",
               title : "Tickets For Fun Website", 
-              description : "On this website I worked doing content management and deployying some tools.",
+              description : "On this website I worked doing content management and deploying some tools.",
 			  srcprojects: "images/favicon_icon/icon-jl.png",
             }, 
 			{ 
@@ -151,8 +151,20 @@
                 {
                   thumb: "images/web_design_projects/james_tattoo/site_james_tattoo2.jpg",
                 }
-				]
+			  ]
             }, 
+			{ 
+              src : "images/web_design_projects/renault/site_renault.jpg",
+              title : "Landing page Teatro Renault", 
+              description : "This page was developed to offer specific tickets for renault customers. The page is connected to the website Tickets For Fun.",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+            },
+			{ 
+              src : "images/web_design_projects/customer_service/site_customer_service.jpg",
+              title : "Customer Service page", 
+              description : "In that job I created a new face for customer service online of the company Tickets For Fun. The idea was facilitate the way how the customer/user could reach the information about the events and the company. I managed to do this reshap using Photoshop, dreamweaver, Html, Css, Javascript/jquery and bootstrap.",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+            },
 			{ 
               src : "images/web_design_projects/anitta/2015/site_anitta-2015_1st.jpg",
               title : "Web Page Anitta 2015", 
@@ -204,7 +216,30 @@
               title : "Lollapalooza 2016", 
 			  srcprojects: "images/favicon_icon/icon-jl.png",
               description : "Lollapalooza Hotsite was developed to promote the Lolla Sales and to present all information of this concert at the same place but organized. The layout was developed by marketing team of Tickets For Fun and I was the frontender responsible for programming following the mockup provided. The tools used to develop was HTML, CSS, Js, Bootstrap, Youtube, Photoshop, Dreamweaver and Illustrator."
+            },
+			{ 
+              src : "images/web_design_projects/villamix/site_villamix.jpg",
+              title : "Landing page Villamix", 
+              description : "To sell the tickets of Villamix events this Landing page was developed. I did this job in partnership with Guilherme Bigonha at the company T4F. In this job I made the programming and he made the Design.",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
             }, 
+			{ 
+              src : "images/web_design_projects/logo_design/john_nascimento/site_logo_john_nascimento.jpg",
+              title : "Logo Design (John Nascimento)", 
+              description : "Here we have my Logo that you can see on this portfolio. I developed this one using a great palette containing blue, yellow and gray.",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+            }, 
+			{ 
+              src : "images/web_design_projects/logo_design/que_legal/site_logo_que_legal.jpg",
+              title : "Logo Design (Que Legal website)", 
+              description : "I developed this logo by using as a reference the employer's silhouette. The request was to develop a logo that could gives the idea of man thinking. The machinery brain represent the mind working and lights represent the ideas that come up when the brain's working. The palette for this project was Yellow, Green and gray.",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [
+                {
+                  thumb: "images/web_design_projects/logo_design/que_legal/site_logo_que_legal2.jpg",
+                }
+              ]
+            },
           ]
         },
         {
@@ -266,23 +301,17 @@
 		  srcprojects: "images/favicon_icon/icon-jl.png",
           photos : [
             { 
-              src : "images/single-img.jpg",
-              title : "dog in the snow", 
-              description : "looks like he needs that jacket",
+              src : "images/digital_painting/impressora/digital_painting_impressora.jpg",
+              title : "Impressora BOCA", 
+              description : "This painting was made to put into practice my painting skills.",
 			  srcprojects: "images/favicon_icon/icon-jl.png",
             }, 
             { 
-              src : "images/single-img.jpg",
-              title : "winter", 
-              description : "a snowy scene in a park",
+              src : "images/digital_painting/pin_pad/digital_painting_pin_pad.jpg",
+              title : "Pin Pad", 
+              description : "This painting was made to put into practice my painting skills.",
 			  srcprojects: "images/favicon_icon/icon-jl.png",
-            }, 
-            { 
-              src : "images/single-img.jpg",
-              title : "frosty pond", 
-              description : "some ducks feeling cold",
-			  srcprojects: "images/favicon_icon/icon-jl.png",
-            } 
+            },
           ]
         }
       ]

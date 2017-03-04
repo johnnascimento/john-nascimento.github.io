@@ -224,6 +224,7 @@ $(document).ready(function(){
       });
   });
 
+
   $(".single-photo-thumbnail").click(function (){
 
       // get the index (position in the array)
