@@ -143,6 +143,10 @@ p{
     cursor: pointer;
             transform: translate(0,-3px);
 }
+.album-thumbnail-hg .thumbnail .caption{
+	height: 190px;
+	overflow-y: hidden;
+}
 /*
 	= Footer icons and navbar adjustments
 ------------------------------------------------*/

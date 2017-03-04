@@ -265,16 +265,16 @@
 
     <div class="row bg-2 bg-size">
       {{#each photos}}
-      <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+      <div class="col-xs-12 col-sm-6 col-md-3 text-center album-thumbnail-hg">
         <div class="thumbnail single-photo-thumbnail" data-id="{{@index}}">
           <img class="center-cropped img-responsive" src="{{src}}" alt=""/>
           
           <div class="caption">
             <h3>{{title}}</h3>
             <p>{{description}}</p>
-            <p>
+            <!--<p>
               <a href="#" class="btn btn-success album-thumbnail">See this project</a>
-            </p>
+            </p>-->
           </div>
         </div>
       </div> <!-- / col -->
@@ -324,7 +324,7 @@
           </div>
 
           {{else}}
-          <div class="row">
+          <div class="row text-center">
             <div class="col-xs-12 col-sm-12 col-md-12 bg-size">
               <p>
                 <a href="#" class="voltar btn btn-default btn-lg" id="voltar">Voltar</a>
