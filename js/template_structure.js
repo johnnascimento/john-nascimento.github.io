@@ -70,7 +70,10 @@ $(document).ready(function(){
         // displays the photos template
 
         // This condition will control what can be visit during the maintenance
-        if (index != 0){
+        if (index == 1){
+          alert('This section is under maintenance.\nPlease try the web design projects for now.\n\nThanks for your comprehension.');
+        }
+		else if (index == 2){
           alert('This section is under maintenance.\nPlease try the web design projects for now.\n\nThanks for your comprehension.');
         }
         else{
@@ -170,13 +173,16 @@ $(document).ready(function(){
         current_album = db.albums[index];
 
         // displays the photos template
-        if (index != 0){
+        if (index == 1){
+          alert('This section is under maintenance.\nPlease try the web design projects for now.\n\nThanks for your comprehension.');
+        }
+		else if (index == 2){
           alert('This section is under maintenance.\nPlease try the web design projects for now.\n\nThanks for your comprehension.');
         }
         else{
           showTemplate(album_template, current_album);
           showTemplateFooter(footer_template, db);
-        }
+        };
         $("body").scrollTop(0);
 
           // add an on click al all the photo thumbnails

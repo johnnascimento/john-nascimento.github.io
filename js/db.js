@@ -38,7 +38,7 @@
           content1:"This is my Portfolio online. Come o in and make yourself at home.",
           content2:"It'll be possible to find projects regard to Web Design, 3D modeling, rendering and animation and many other really good stuffs here.",
           title2:"Projects",
-          content3: "Check out some of my projects bellow",
+          content3: "Check out some of my projects below",
           src: "images/favicon_icon/icon-jl.png",
           }
         ],
@@ -132,6 +132,7 @@
       albums : [
         {
           name : "Web Design Projects", 
+		  classe: "album-thumbnail",
           thumbnail : "images/web_design_projects/site_web_design_thumb.jpg",
 		  srcprojects: "images/favicon_icon/icon-jl.png",
           description: "Landing pages, Hotsites, Mockups, Logo Design and many other things you can find out here",
@@ -150,7 +151,13 @@
 			  moreimgs: [
                 {
                   thumb: "images/web_design_projects/james_tattoo/site_james_tattoo2.jpg",
-                }
+                },
+				{
+                  thumb: "images/web_design_projects/james_tattoo/site_james_tattoo3.jpg",
+                },
+				{
+                  thumb: "images/web_design_projects/james_tattoo/site_james_tattoo4.jpg",
+                },
 			  ]
             }, 
 			{ 
@@ -222,7 +229,43 @@
               title : "Landing page Villamix", 
               description : "To sell the tickets of Villamix events this Landing page was developed. I did this job in partnership with Guilherme Bigonha at the company T4F. In this job I made the programming and he made the Design.",
 			  srcprojects: "images/favicon_icon/icon-jl.png",
-            }, 
+            },
+			{ 
+              src : "images/web_design_projects/intercambio_vision/home/site_intercambio_vision_home1.jpg",
+              title : "Intercambio Vision (Redesign Homepage)", 
+              description : "I've worked as a Web Designer for Vision Intercambio, providing solution and improvements on its website.",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [
+                {
+                  thumb: "images/web_design_projects/intercambio_vision/home/site_intercambio_vision_home2.jpg",
+                },
+			  ],
+			},
+			{ 
+              src : "images/web_design_projects/intercambio_vision/escolas/site_intercambio_vision_escolas1.jpg",
+              title : "Intercambio Vision (Redesign Schools Page)", 
+              description : "I've worked as a Web Designer for Vision Intercambio, providing solution and improvements on its website.",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [
+				{
+                  thumb: "images/web_design_projects/intercambio_vision/escolas/site_intercambio_vision_escolas2.jpg",
+                },
+				{
+                  thumb: "images/web_design_projects/intercambio_vision/escolas/site_intercambio_vision_escolas3.jpg",
+                },
+			  ],
+			},
+			{
+              src : "images/web_design_projects/intercambio_vision/palestra/site_intercambio_vision_palestras1.jpg",
+              title : "Intercambio Vision (Speech page improvements)", 
+              description : "I've worked as a Web Designer for Vision Intercambio, providing solution and improvements on its website.",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [
+				{
+                  thumb: "images/web_design_projects/intercambio_vision/palestra/site_intercambio_vision_palestras2.jpg",
+                },
+			  ]
+            },
 			{ 
               src : "images/web_design_projects/logo_design/john_nascimento/site_logo_john_nascimento.jpg",
               title : "Logo Design (John Nascimento)", 
@@ -244,6 +287,7 @@
         },
         {
           name : "Game Design projects", 
+		  classe: "album-thumbnail",
           thumbnail : "images/game_design_projects/site_game_projects_thumb.jpg",
           description: "Character design, concept Vehicles and weapons, level design and many more you'll see right here",
 		  srcprojects: "images/favicon_icon/icon-jl.png",
@@ -270,6 +314,7 @@
         },
         {
           name : "Personal projects", 
+		  classe: "album-thumbnail",
           thumbnail : "images/personal_projects/site_personal_projects_thumb.jpg",
           description: "You can see some of my personal projects either in progress or finished just here",
 		  srcprojects: "images/favicon_icon/icon-jl.png",
@@ -296,6 +341,7 @@
         },
         {
           name : "Digital and traditional painting", 
+		  classe: "album-thumbnail",
           thumbnail : "images/digital_painting/site_digital_painting_-thumb.jpg",
           description: "C'mon, have a sit! I'll show you some of my productions in digital and traditional painting field. I hope you enjoy",
 		  srcprojects: "images/favicon_icon/icon-jl.png",

@@ -42,9 +42,10 @@ p{
 .bg-1 p{
 	color: #ececec;
 }
-.bg-1 .album-thumbnail h1, .bg-1 .album-thumbnail h2, .bg-1 .album-thumbnail h3, .bg-1 .album-thumbnail h4, .bg-1 .album-thumbnail h5, .bg-1 .album-thumbnail h6, .bg-1 .album-thumbnail` p{
+/*.bg-1 .album-thumbnail h1, .bg-1 .album-thumbnail h2, .bg-1 .album-thumbnail h3, .bg-1 .album-thumbnail h4, .bg-1 .album-thumbnail h5, .bg-1 .album-thumbnail h6, .bg-1 .album-thumbnail` p{
 	color: # !important;
-}
+}*/
+
 .bg-2{
 	background-color:#ECECEC; /* Grey */
 	border-bottom: 1px solid #232733; /*Navy blue*/
