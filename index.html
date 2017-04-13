@@ -125,7 +125,7 @@
 			<img src="{{src}}" class="img-thumbnail img-circle profile aboutmeicon" alt="{{whodescription}}" title="{{briefdescription}}" />
 			<h1>{{{title1}}}</h1>
 			<p class="lead">{{content1}}</p>
-			<p>{{content2}}</p>
+			<p>{{{content2}}}</p>
 		  </div>
 		</div>
 		{{/each}}
@@ -148,6 +148,8 @@
            <div class="caption text-center">
              <h3>{{name}}</h3>
              <p>{{description}}</p>
+             <p>Number of projects: {{photos.length}}</p>
+             <p></p>
              <!--<p>
               <a href="#" role="button" class="btn btn-primary btn-latestproject album-thumbnail" data-id="{{@index}}">Read more</a>
               <a href="#" role="button" class="btn btn-default about-me">About me</a>
