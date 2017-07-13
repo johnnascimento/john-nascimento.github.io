@@ -132,23 +132,18 @@
       albums : [
         {
           name : "Web Design Projects", 
-		      classe: "album-thumbnail",
+		  classe: "album-thumbnail",
           thumbnail : "images/web_design_projects/site_web_design_thumb.jpg",
-		      srcprojects: "images/favicon_icon/icon-jl.png",
+		  srcprojects: "images/favicon_icon/icon-jl.png",
           description: "Landing pages, Hotsites, Mockups, Logo Design and many other things you can find out here",
           photos : [
-            { 
-              src : "images/web_design_projects/t4f/site_t4f.jpg",
-              title : "Tickets For Fun Website", 
-              description : "On this website I worked doing content management and deploying some tools.",
-			        srcprojects: "images/favicon_icon/icon-jl.png",
-            }, 
-			      { 
+		  { 
               src : "images/web_design_projects/james_tattoo/site_james_tattoo.jpg",
               title : "James Tattoo", 
               description : "Website developed to present the projects of James. On this project I've used wordpress platform, HTML, CSS and Javascript programming language.",
-			        srcprojects: "images/favicon_icon/icon-jl.png",
-			        moreimgs: [
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  srcexternallink: "http://www.jamestatoo.16mb.com",
+			  moreimgs: [
                 {
                   thumb: "images/web_design_projects/james_tattoo/site_james_tattoo2.jpg",
                 },
@@ -159,7 +154,14 @@
                   thumb: "images/web_design_projects/james_tattoo/site_james_tattoo4.jpg",
                 },
 			        ]
-            }, 
+            },
+            { 
+              src : "images/web_design_projects/t4f/site_t4f.jpg",
+              title : "Tickets For Fun Website", 
+              description : "As Web Analyst I worked managing the website content ",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  srcexternallink: "http://premier.ticketsforfun.com.br",
+            },
 			      { 
               src : "images/web_design_projects/renault/site_renault.jpg",
               title : "Landing page Teatro Renault", 
@@ -172,7 +174,7 @@
               description : "In that job I created a new face for customer service online of the company Tickets For Fun. The idea was facilitate the way how the customer/user could reach the information about the events and the company. I managed to do this reshap using Photoshop, dreamweaver, Html, Css, Javascript/jquery and bootstrap.",
 			        srcprojects: "images/favicon_icon/icon-jl.png",
             },
-			      { 
+			 /*     { 
               src : "images/web_design_projects/anitta/2015/site_anitta-2015_1st.jpg",
               title : "Web Page Anitta 2015", 
               description : "Page developed to promote the concert of the singer Anitta in Brazil by Tickets For Fun company in 2015.",
@@ -182,7 +184,7 @@
                   thumb: "images/web_design_projects/anitta/2015/site_anitta-2015_2nd.jpg",
                 }
               ]
-            }, 
+            }, */
             { 
               src : "images/web_design_projects/anitta/2016/site_anitta_2016.jpg",
               title : "Web Page Anitta 2016", 
@@ -212,12 +214,12 @@
 			        srcprojects: "images/favicon_icon/icon-jl.png",
               description : "The design of this webpage was developed by FLIP's team and I was responsible for programming based on the mockup developed by them. To develop this page I've used HTML, CSS, Js, Photoshop, and Dreamweaver. This page followed the same idea of the site developed in 2015, but this time they used other color palette."
             }, 
-            { 
+            /*{ 
               src : "images/web_design_projects/fuerza_bruta/site_fuerza_bruta.jpg",
               title : "Fuerza Bruta Wayra", 
 			        srcprojects: "images/favicon_icon/icon-jl.png",
               description : "Developing this page was used HTML, CSS, Js, Photoshop, Color Scheme palette and Sublime.",
-            }, 
+            }, */
             { 
               src : "images/web_design_projects/lollapalooza/site_lollapalooza.jpg",
               title : "Lollapalooza 2016", 
@@ -235,13 +237,14 @@
               title : "Intercambio Vision (Redesign Homepage)", 
               description : "I've worked as a Web Designer for Vision Intercambio, providing solution and improvements on its website.",
 			        srcprojects: "images/favicon_icon/icon-jl.png",
-			        moreimgs: [
+					srcexternallink: "http://www.intercambiovision.com.br",
+			      /*  moreimgs: [
                 {
                   thumb: "images/web_design_projects/intercambio_vision/home/site_intercambio_vision_home2.jpg",
                 },
-			         ],
+			         ],*/
 			       },
-			      { 
+			      /*{ 
               src : "images/web_design_projects/intercambio_vision/escolas/site_intercambio_vision_escolas1.jpg",
               title : "Intercambio Vision (Redesign Schools Page)", 
               description : "I've worked as a Web Designer for Vision Intercambio, providing solution and improvements on its website.",
@@ -265,7 +268,7 @@
                   thumb: "images/web_design_projects/intercambio_vision/palestra/site_intercambio_vision_palestras2.jpg",
               },
 			       ]
-            },
+            },*/
 			      { 
               src : "images/web_design_projects/logo_design/john_nascimento/site_logo_john_nascimento.jpg",
               title : "Logo Design (John Nascimento)", 

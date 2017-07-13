@@ -111,6 +111,7 @@ $(document).ready(function(){
                 $(this).attr("src", current_big_img);
 
                 console.log("Clicks Working!!!");
+				$("body").scrollTop(0);
               }
             );
 
@@ -216,6 +217,7 @@ $(document).ready(function(){
                 $(this).attr("src", current_big_img);
 
                 console.log("Clicks Working!!!");
+				$("body").scrollTop(0);
               }
             );
 
@@ -259,6 +261,7 @@ $(document).ready(function(){
           $(this).attr("src", current_big_img);
 
           console.log("Clicks Working!!!");
+		  $("body").scrollTop(0);
         }
       );
 
