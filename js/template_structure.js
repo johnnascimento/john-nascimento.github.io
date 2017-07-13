@@ -66,11 +66,14 @@ $(document).ready(function(){
 
         // set the current album to this album
         current_album = db.albums[index];
+		
+		showTemplate(album_template, current_album);
+        showTemplateFooter(footer_template, db);
 
         // displays the photos template
 
         // This condition will control what can be visit during the maintenance
-        if (index == 1){
+        /*if (index == 1){
           alert('This section is under maintenance.\nPlease try the web design projects for now.\n\nThanks for your comprehension.');
         }
 		else if (index == 2){
@@ -79,7 +82,7 @@ $(document).ready(function(){
         else{
           showTemplate(album_template, current_album);
           showTemplateFooter(footer_template, db);
-        };
+        };*/
 
           // add an on click al all the photo thumbnails
           // which displays the photo in a modal popup
@@ -172,9 +175,11 @@ $(document).ready(function(){
 
         // set the current album to this album
         current_album = db.albums[index];
-
+        showTemplate(album_template, current_album);
+        showTemplateFooter(footer_template, db);
+		  
         // displays the photos template
-        if (index == 1){
+        /*if (index == 1){
           alert('This section is under maintenance.\nPlease try the web design projects for now.\n\nThanks for your comprehension.');
         }
 		else if (index == 2){
@@ -183,7 +188,8 @@ $(document).ready(function(){
         else{
           showTemplate(album_template, current_album);
           showTemplateFooter(footer_template, db);
-        };
+        };*/
+		
         $("body").scrollTop(0);
 
           // add an on click al all the photo thumbnails

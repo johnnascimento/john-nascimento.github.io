@@ -35,10 +35,10 @@
       section2:[
          {
           title1:"Hello there!",
-          content1:"Welcome to my online Portfolio.",
-          content2:"Please, feel free to look around and contact me!<br />You will be able to find a variety of projects related to Web Development, 3D modeling and rendering as also some personal projects that I developed to improve my skills.",
+          content1:"Welcome to my Portfolio.",
+          content2:"I am Web Designer and Front-end developer.<br /> On this portfolio you will find plenty of projects related to UX, Web and logo design, landing page development, web applications and much more.<br/>It will also be possible for you to reach some projects I have been working on regarding to Computer Graphics, focused on Game Design.",
           title2:"Projects",
-          content3: "Come over here and check out some of my projects.",
+          content3: "Check them out!",
           src: "images/favicon_icon/icon-jl.png",
           }
         ],
@@ -161,18 +161,21 @@
               description : "As Web Analyst I worked managing the website content ",
 			  srcprojects: "images/favicon_icon/icon-jl.png",
 			  srcexternallink: "http://premier.ticketsforfun.com.br",
+			  moreimgs: [1]
             },
 			      { 
               src : "images/web_design_projects/renault/site_renault.jpg",
               title : "Landing page Teatro Renault", 
               description : "This page was developed to offer specific tickets for renault customers. The page is connected to the website Tickets For Fun.",
-			        srcprojects: "images/favicon_icon/icon-jl.png",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [1]
             },
 			      { 
               src : "images/web_design_projects/customer_service/site_customer_service.jpg",
               title : "Customer Service page", 
               description : "In that job I created a new face for customer service online of the company Tickets For Fun. The idea was facilitate the way how the customer/user could reach the information about the events and the company. I managed to do this reshap using Photoshop, dreamweaver, Html, Css, Javascript/jquery and bootstrap.",
-			        srcprojects: "images/favicon_icon/icon-jl.png",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [1]
             },
 			 /*     { 
               src : "images/web_design_projects/anitta/2015/site_anitta-2015_1st.jpg",
@@ -189,13 +192,14 @@
               src : "images/web_design_projects/anitta/2016/site_anitta_2016.jpg",
               title : "Web Page Anitta 2016", 
               description : "This project was developed to promote the concert of the singer Anitta in Brazil by Tickets For Fun company in 2016.",
-			        srcprojects: "images/favicon_icon/icon-jl.png",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [1]
             }, 
             { 
               src : "images/web_design_projects/festival_piaui/site_festival_piaui_defined.jpg",
               title : "Festival Piaui", 
               description : "This web page was developed to promote Festival Piaui sales. Firstly was developed a mockup in order to offer the best of this product and after some adjustments the final project was resolved.",
-			        srcprojects: "images/favicon_icon/icon-jl.png",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
               moreimgs: [
                 {
                   thumb: "images/web_design_projects/festival_piaui/site_festival_piaui_my_model.jpg",
@@ -205,14 +209,16 @@
             { 
               src : "images/web_design_projects/flip/2015/site_flip_2015.jpg",
               title : "Flip Web Page 2015", 
-			        srcprojects: "images/favicon_icon/icon-jl.png",
-              description : "The design of this webpage was developed by FLIP's team and I was responsible for programming based on the mockup developed by them. To develop this page I've used HTML, CSS, Js, Photoshop, and Dreamweaver."
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+              description : "The design of this webpage was developed by FLIP's team and I was responsible for programming based on the mockup developed by them. To develop this page I've used HTML, CSS, Js, Photoshop, and Dreamweaver.",
+			  moreimgs: [1]
             }, 
             { 
               src : "images/web_design_projects/flip/2016/site_flip_2016.jpg",
               title : "Flip Web Page 2016", 
-			        srcprojects: "images/favicon_icon/icon-jl.png",
-              description : "The design of this webpage was developed by FLIP's team and I was responsible for programming based on the mockup developed by them. To develop this page I've used HTML, CSS, Js, Photoshop, and Dreamweaver. This page followed the same idea of the site developed in 2015, but this time they used other color palette."
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+              description : "The design of this webpage was developed by FLIP's team and I was responsible for programming based on the mockup developed by them. To develop this page I've used HTML, CSS, Js, Photoshop, and Dreamweaver. This page followed the same idea of the site developed in 2015, but this time they used other color palette.",
+			  moreimgs: [1]
             }, 
             /*{ 
               src : "images/web_design_projects/fuerza_bruta/site_fuerza_bruta.jpg",
@@ -223,21 +229,24 @@
             { 
               src : "images/web_design_projects/lollapalooza/site_lollapalooza.jpg",
               title : "Lollapalooza 2016", 
-			        srcprojects: "images/favicon_icon/icon-jl.png",
-              description : "Lollapalooza Hotsite was developed to promote the Lolla Sales and to present all information of this concert at the same place but organized. The layout was developed by marketing team of Tickets For Fun and I was the frontender responsible for programming following the mockup provided. The tools used to develop was HTML, CSS, Js, Bootstrap, Youtube, Photoshop, Dreamweaver and Illustrator."
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+              description : "Lollapalooza Hotsite was developed to promote the Lolla Sales and to present all information of this concert at the same place but organized. The layout was developed by marketing team of Tickets For Fun and I was the frontender responsible for programming following the mockup provided. The tools used to develop was HTML, CSS, Js, Bootstrap, Youtube, Photoshop, Dreamweaver and Illustrator.",
+			  moreimgs: [1]
             },
 		      	{ 
               src : "images/web_design_projects/villamix/site_villamix.jpg",
               title : "Landing page Villamix", 
               description : "To sell the tickets of Villamix events this Landing page was developed. I did this job in partnership with Guilherme Bigonha at the company T4F. In this job I made the programming and he made the Design.",
-			        srcprojects: "images/favicon_icon/icon-jl.png",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [1]
             },
 			      { 
               src : "images/web_design_projects/intercambio_vision/home/site_intercambio_vision_home1.jpg",
               title : "Intercambio Vision (Redesign Homepage)", 
               description : "I've worked as a Web Designer for Vision Intercambio, providing solution and improvements on its website.",
-			        srcprojects: "images/favicon_icon/icon-jl.png",
-					srcexternallink: "http://www.intercambiovision.com.br",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  srcexternallink: "http://www.intercambiovision.com.br",
+			  moreimgs: [1]
 			      /*  moreimgs: [
                 {
                   thumb: "images/web_design_projects/intercambio_vision/home/site_intercambio_vision_home2.jpg",
@@ -273,14 +282,15 @@
               src : "images/web_design_projects/logo_design/john_nascimento/site_logo_john_nascimento.jpg",
               title : "Logo Design (John Nascimento)", 
               description : "Here we have my Logo that you can see on this portfolio. I developed this one using a great palette containing blue, yellow and gray.",
-			        srcprojects: "images/favicon_icon/icon-jl.png",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [1]
             }, 
 			      { 
               src : "images/web_design_projects/logo_design/que_legal/site_logo_que_legal.jpg",
               title : "Logo Design (Que Legal website)", 
               description : "I developed this logo by using as a reference the employer's silhouette. The request was to develop a logo that could gives the idea of man thinking. The machinery brain represent the mind working and lights represent the ideas that come up when the brain's working. The palette for this project was Yellow, Green and gray.",
-			        srcprojects: "images/favicon_icon/icon-jl.png",
-			        moreimgs: [
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [
                 {
                   thumb: "images/web_design_projects/logo_design/que_legal/site_logo_que_legal2.jpg",
                 }
@@ -290,76 +300,191 @@
         },
         {
           name : "Game Design projects", 
-		      classe: "album-thumbnail",
+		  classe: "album-thumbnail",
           thumbnail : "images/game_design_projects/site_game_projects_thumb.jpg",
           description: "Character design, concept Vehicles and weapons, level design and many more you'll see right here",
-		      srcprojects: "images/favicon_icon/icon-jl.png",
+		  srcprojects: "images/favicon_icon/icon-jl.png",
           photos : [
             { 
-              src : "images/single-img.jpg",
-              title : "syths", 
-              description : "all workshops should aspire to being this tidy",
-			        srcprojects: "images/favicon_icon/icon-jl.png",
+              src : "images/game_design_projects/tradicional_sculpture/rashidi1.jpg",
+              title : "Character: Rashidi", 
+              description : "Character developed during the character design module of the Computer Graphics course at School of Art Game and Animation (SAGA). This sculpture was developed by using clay as feedstock for this project.",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [
+				{
+                  thumb: "images/game_design_projects/tradicional_sculpture/rashidi2.jpg",
+                },
+				{
+                  thumb: "images/game_design_projects/tradicional_sculpture/rashidi3.jpg",
+                },
+				{
+                  thumb: "images/game_design_projects/tradicional_sculpture/rashidi4.jpg",
+                },
+				{
+                  thumb: "images/game_design_projects/tradicional_sculpture/rashidi5.jpg",
+                },
+				{
+                  thumb: "images/game_design_projects/tradicional_sculpture/rashidi6.jpg",
+                },
+				{
+                  thumb: "images/game_design_projects/tradicional_sculpture/rashidi7.jpg",
+                },
+				{
+                  thumb: "images/game_design_projects/tradicional_sculpture/rashidi8.jpg",
+                },
+				{
+                  thumb: "images/game_design_projects/tradicional_sculpture/rashidi9.png",
+                },
+              ]
             }, 
             { 
-              src : "images/single-img.jpg",
-              title : "helmet", 
-              description : "a sci-fi helmet",
-			        srcprojects: "images/favicon_icon/icon-jl.png",
+              src : "images/game_design_projects/3d_model/living_room/living_room.jpg",
+              title : "3D Living room", 
+              description : "This living room was developed by using 3D Maya software during the 3D Modeling module of the Computer Graphics course at School of Art Game and Animation (SAGA).",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [
+                {
+                  thumb: "images/game_design_projects/3d_model/living_room/living_room2.jpg",
+                }
+			  ]
             }, 
             { 
-              src : "images/single-img.jpg",
-              title : "drums", 
-              description : "a rather nice drum kit",
-			        srcprojects: "images/favicon_icon/icon-jl.png",
-            }  
+              src : "images/game_design_projects/3d_model/atari/console/atari1.jpg",
+              title : "3D Atari console", 
+              description : "This Atari console was developed by using 3D Maya software during the 3D Modeling module of the Computer Graphics course at School of Art Game and Animation (SAGA).",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [
+                {
+                  thumb: "images/game_design_projects/3d_model/atari/console/atari2.jpg",
+                },
+				{
+                  thumb: "images/game_design_projects/3d_model/atari/console/atari3.jpg",
+                },
+				{
+                  thumb: "images/game_design_projects/3d_model/atari/console/atari4.jpg",
+                },
+			  ]
+            },
+			{ 
+              src : "images/game_design_projects/3d_model/atari/controller/controller1.jpg",
+              title : "3D Atari controllers", 
+              description : "These Atari controllers were developed by using 3D Maya software during the 3D Modeling module of the Computer Graphics course at School of Art Game and Animation (SAGA).",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [
+                {
+                  thumb: "images/game_design_projects/3d_model/atari/controller/controller2.jpg",
+                },
+				{
+                  thumb: "images/game_design_projects/3d_model/atari/controller/controller3.jpg",
+                },
+				{
+                  thumb: "images/game_design_projects/3d_model/atari/controller/controller4.jpg",
+                },
+				{
+                  thumb: "images/game_design_projects/3d_model/atari/controller/controller5.jpg",
+                },
+				{
+                  thumb: "images/game_design_projects/3d_model/atari/controller/controller6.jpg",
+                },
+			  ]
+            },
+			{ 
+              src : "images/game_design_projects/3d_model/nes/controller/controller1.jpg",
+              title : "3D Nes controllers", 
+              description : "These Nes controllers were developed by using 3D Maya software during the 3D Modeling module of the Computer Graphics course at School of Art Game and Animation (SAGA).",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [
+                {
+                  thumb: "images/game_design_projects/3d_model/nes/controller/controller2.jpg",
+                },
+				{
+                  thumb: "images/game_design_projects/3d_model/nes/controller/controller3.jpg",
+                },
+			  ]
+            },
+			{ 
+              src : "images/game_design_projects/3d_model/nintendo_wii/controller/controller1.jpg",
+              title : "3D Nintendo Wii controllers", 
+              description : "These Nintendo Wii controllers were developed by using 3D Maya software during the 3D Modeling module of the Computer Graphics course at School of Art Game and Animation (SAGA).",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [
+                {
+                  thumb: "images/game_design_projects/3d_model/nintendo_wii/controller/controller2.jpg",
+                },
+				{
+                  thumb: "images/game_design_projects/3d_model/nintendo_wii/controller/controller3.jpg",
+                },
+				{
+                  thumb: "images/game_design_projects/3d_model/nintendo_wii/controller/controller4.jpg",
+                },
+			  ]
+            },
+			{
+              src : "images/game_design_projects/3d_model/column/column_low_poly.jpg",
+              title : "3D Egyptian column", 
+              description : "These Lowpoly column was developed by using 3D Maya software during the 3D Modeling module of the Computer Graphics course at School of Art Game and Animation (SAGA).",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [1]
+            },
           ]
         },
         {
           name : "Personal projects", 
-		      classe: "album-thumbnail",
+		  classe: "album-thumbnail",
           thumbnail : "images/personal_projects/site_personal_projects_thumb.jpg",
-          description: "You can see some of my personal projects either in progress or finished just here",
-		      srcprojects: "images/favicon_icon/icon-jl.png",
+          description: "You can see some of my personal projects either in progress or finished here",
+		  srcprojects: "images/favicon_icon/icon-jl.png",
           photos : [
             { 
-              src : "images/single-img.jpg",
-              title : "dog in the snow", 
-              description : "looks like he needs that jacket",
-			        srcprojects: "images/favicon_icon/icon-jl.png",
+              src : "images/personal_projects/draws/john_nascimento/john.jpg",
+              title : "John Nascimento self-portrait", 
+              description : "A self portrait designed with HB pencil on a calm afternoon in my office.",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [1]
             }, 
             { 
-              src : "images/single-img.jpg",
-              title : "winter", 
-              description : "a snowy scene in a park",
-	            srcprojects: "images/favicon_icon/icon-jl.png",
-            }, 
+              src : "images/personal_projects/draws/michonne_twd/michonne.jpg",
+              title : "Michonne TWD", 
+              description : "A quick sketch made to improve my designing skill",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [1]
+            },  
             { 
-              src : "images/single-img.jpg",
-              title : "frosty pond", 
-              description : "some ducks feeling cold",
-			        srcprojects: "images/favicon_icon/icon-jl.png",
-            } 
+              src : "images/personal_projects/draws/river_liffey/river_liffey.jpg",
+              title : "The River Liffey", 
+              description : "A draw produced on an afternoon waiting for my wife at the River Liffey. The landscape there is just breathtaking.",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [1]
+            }, 
+			{ 
+              src : "images/personal_projects/draws/one_piece/luffy.jpg",
+              title : "Monkey D. Luffy", 
+              description : "Traditional painting executed on an A5 paper by using colored pencil.",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [1]
+            }, 
           ]
         },
         {
           name : "Digital and traditional painting", 
-		      classe: "album-thumbnail",
+		  classe: "album-thumbnail",
           thumbnail : "images/digital_painting/site_digital_painting_-thumb.jpg",
           description: "C'mon, have a sit! I'll show you some of my productions in digital and traditional painting field. I hope you enjoy",
-		      srcprojects: "images/favicon_icon/icon-jl.png",
+		  srcprojects: "images/favicon_icon/icon-jl.png",
           photos : [
             { 
               src : "images/digital_painting/impressora/digital_painting_impressora.jpg",
               title : "Impressora BOCA", 
               description : "This painting was made to put into practice my painting skills.",
-			        srcprojects: "images/favicon_icon/icon-jl.png",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [1]
             }, 
             { 
               src : "images/digital_painting/pin_pad/digital_painting_pin_pad.jpg",
               title : "Pin Pad", 
               description : "This painting was made to put into practice my painting skills.",
-			        srcprojects: "images/favicon_icon/icon-jl.png",
+			  srcprojects: "images/favicon_icon/icon-jl.png",
+			  moreimgs: [1]
             },
           ]
         }
