@@ -145,9 +145,11 @@ p{
             transform: translate(0,-3px);
 }
 .album-thumbnail-hg .thumbnail .caption{
-	height: 190px;
+	height: 200px;
 	overflow-y: hidden;
+	margin-bottom: 35px;
 }
+
 /*
 	= Footer icons and navbar adjustments
 ------------------------------------------------*/
@@ -300,8 +302,8 @@ p{
 	min-height: 700px;
 }
 .profile{
-	width:175px;
-	height:175px;
+	width:165px;
+	padding: 15px;
 }
 
 /*
