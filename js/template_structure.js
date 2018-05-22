@@ -112,6 +112,7 @@ $(document).ready(function(){
 
                 $("#big-img").attr("src", $(this).attr("src"));
                 $(this).attr("src", current_big_img);
+				
 
                 console.log("Clicks Working!!!");
 				$("body").scrollTop(0);
@@ -152,10 +153,7 @@ $(document).ready(function(){
       
   });
 
-  $(".gameprojects").click(function(){
-	  alert("This section is under maintenance!");
-  });
-  $(".webprojects").click(function(){
+  $(".myprojects").click(function(){
       
       showTemplate(my_projects_template, db);
       showTemplateFooter(footer_template, db);
@@ -260,6 +258,8 @@ $(document).ready(function(){
 
       $(".cropImg").click(
         function(){
+		  $("body").scrollTop(0);
+
           current_big_img = $("#big-img").attr("src");
           console.log(current_big_img);
 
@@ -270,7 +270,7 @@ $(document).ready(function(){
 		  $("body").scrollTop(0);
         }
       );
-
+	  
       $(".voltar").click(function(){
       
         $(".webprojects").click();

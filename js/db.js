@@ -34,11 +34,11 @@
       ],
       section2:[
          {
-          title1:"Hello there!",
-          content1:"Welcome to my Portfolio.",
-          content2:"I am Web Designer and Front-end developer.<br /> On this portfolio you will find plenty of projects related to UX, Web and logo design, landing page development, web applications and much more.<br/>It will also be possible for you to reach some projects I have been working on regarding to Computer Graphics, focused on Game Design.",
+          title1:"Hi there!",
+          content1:"My name is John Lenon and I am Designer!",
+          content2:"This is my Online portfolio and you gonna find here some of the works I`ve taken part in along the way as a Web Designer. <br/>Please, feel free to go around and check out my professional and personal projects. <br/>If you have any question don't hesitate to send me a message on Facebook or Instagram and I am gonna answer you as fast as possible.",
           title2:"Projects",
-          content3: "Check them out!",
+          content3: "Why don't you have a look at some of my projects down here",
           src: "images/favicon_icon/johns_head.png",
           }
         ],
@@ -92,7 +92,7 @@
           wherefindme: "Where would you find me?",
           wheredescription: "Probably, at home studying, creating something amazing or maybe working on a personal project. Anyway, if you want to contact me, don't hesitate.",
           footer: "If you want to contact me, please look at my contact information below. ",
-          footerdescription: "<span class='glyphicon glyphicon-earphone'></span> Phone: +353 89 983 3946<br /><span class='glyphicon glyphicon-phone'></span> WhatsApp: 00 55 11 97012 3139<br /><span class='glyphicon glyphicon-envelope'></span> E-mail: jlenonns@gmail.com",
+          footerdescription: "<span class='glyphicon glyphicon-earphone'></span> Phone: +353 89 940 8445<br /><span class='glyphicon glyphicon-phone'></span> WhatsApp: +353 89 940 8445<br /><span class='glyphicon glyphicon-envelope'></span> E-mail: jlenonns@gmail.com",
         },
       ],
       contactme: [
@@ -124,8 +124,8 @@
           adjclass: "",
           adjclass2: "",
           field1: "<strong>John Nascimento</strong> <br />",
-          field2: "160 Harmonstown Road, Dublin 5<br> Dublin, Ireland<br>",
-          field3: "<abbr title='Phone'>P:</abbr> +353 89 9833-946<br /><br />",
+          field2: "114 Church Road,East Wall, Dublin 3<br> Dublin, Ireland<br>",
+          field3: "<abbr title='Phone'>P:</abbr> +353 89 940 8445<br /><br />",
           field4: "<strong>Get in touch</strong><br><a href='mailto:jlenonns@gmail.com'>jlenonns@gmail.com</a>",
           },
         ],
@@ -137,6 +137,120 @@
 		  srcprojects: "images/favicon_icon/johns_head.png",
           description: "Landing pages, Hotsites, Mockups, Logo Design and many other things you can find out here",
           photos : [
+		  { 
+              src : "images/web_design_projects/overdrink/logo/overdrink-secondary-logo.png",
+              title : "OverDrink", 
+              description : "Working as Web Designer for OverDrink company assisting them to increase the number of their audience and improve the company's image online.",
+			  description2: "Works done so far: Menus, Arts for advertisement and post on Facebook, logo customization and among others.",
+			  srcprojects: "images/favicon_icon/johns_head.png",
+			  srcexternallink: "",
+			  moreimgs: [
+                {
+                  thumb: "images/web_design_projects/overdrink/advertisement/overdrink-1st-post.jpg",
+				  thumbtitle: "",
+                },
+				{
+                  thumb: "images/web_design_projects/overdrink/advertisement/overdrink-2nd-post.jpg",
+				  thumbtitle: "",
+                },
+				{
+                  thumb: "images/web_design_projects/overdrink/advertisement/overdrink-3rd-post.jpg",
+				  thumbtitle: "",
+                },
+				{
+                  thumb: "images/web_design_projects/overdrink/advertisement/overdrink-4th-post.jpg",
+				  thumbtitle: "",
+                },
+				{
+                  thumb: "images/web_design_projects/overdrink/advertisement/overdrink-5th-post.jpg",
+				  thumbtitle: "",
+                },
+				{
+                  thumb: "images/web_design_projects/overdrink/celebration/celebrating-464-years-of-sp.jpg",
+				  thumbtitle: "",
+                },
+				{
+                  thumb: "images/web_design_projects/overdrink/celebration/overdrink-christmas-post.jpg",
+				  thumbtitle: "",
+                },
+				{
+                  thumb: "images/web_design_projects/overdrink/celebration/overdrink-creativity-day-post.jpg",
+				  thumbtitle: "",
+                },
+				{
+                  thumb: "images/web_design_projects/overdrink/celebration/overdrink-new-year-post.jpg",
+				  thumbtitle: "",
+                },
+				{
+                  thumb: "images/web_design_projects/overdrink/logo-customization/overdrink-face-logo-1.jpg",
+				  thumbtitle: "",
+                },
+				{
+                  thumb: "images/web_design_projects/overdrink/logo-customization/overdrink-face-logo-2.jpg",
+				  thumbtitle: "",
+                },
+				{
+                  thumb: "images/web_design_projects/overdrink/logo-customization/overdrink-face-logo-christmas.jpg",
+				  thumbtitle: "",
+                },
+				{
+                  thumb: "images/web_design_projects/overdrink/menus/overdrink-caipirinha-festival.jpg",
+				  thumbtitle: "",
+                },
+				{
+                  thumb: "images/web_design_projects/overdrink/menus/overdrink-menu-c-n-f.jpg",
+				  thumbtitle: "",
+                },
+				{
+                  thumb: "images/web_design_projects/overdrink/menus/overdrink-menu-wedding-Babi-n-john.jpg",
+				  thumbtitle: "",
+                },
+				{
+                  thumb: "images/web_design_projects/overdrink/menus/overdrink-party-on-21-10-17.jpg",
+				  thumbtitle: "",
+                },
+			        ]
+            },
+			{ 
+			  src : "images/web_design_projects/espaco-ka/logo/espaco-ka-sticker-2nd.png",
+			  title : "Espaço Ka", 
+			  description : "Projects enclosing everything related to the brand Espaço Ka.",
+			  description2: "Here you gonna find Logo design, Advertisement, Banners, Business Card among others.",
+			  srcprojects: "images/favicon_icon/johns_head.png",
+			  srcexternallink: "",
+			  moreimgs: [
+				{
+				  thumb: "images/web_design_projects/espaco-ka/advertising/espaco-ka-advertisement-1st.jpg",
+				},
+				{
+				  thumb: "images/web_design_projects/espaco-ka/advertising/espaco-ka-advertisement-2nd.jpg",
+				},
+				{
+				  thumb: "images/web_design_projects/espaco-ka/banner/espaco-ka-banner.jpg",
+				},
+				{
+				  thumb: "images/web_design_projects/espaco-ka//business-card/espaco-ka-business-card.jpg",
+				},
+				{
+				  thumb: "images/web_design_projects/espaco-ka/logo/espaco-ka-main-logo-1st.jpg",
+				},
+				{
+				  thumb: "images/web_design_projects/espaco-ka/logo/espaco-ka-main-logo-2nd.jpg",
+				},
+				{
+				  thumb: "images/web_design_projects/espaco-ka/logo/espaco-ka-secondary-logo-1st.jpg",
+				},
+				{
+				  thumb: "images/web_design_projects/espaco-ka/logo/espaco-ka-secondary-logo-2nd.jpg",
+				},
+				{
+				  thumb: "images/web_design_projects/espaco-ka/logo/espaco-ka-sticker-1st.png",
+				},
+				{
+				  thumb: "images/web_design_projects/espaco-ka/voucher/espaco-ka-voucher-portfolio.jpg",
+				},
+					]
+			},
 		  { 
               src : "images/web_design_projects/james_tattoo/site_james_tattoo.jpg",
               title : "James Tattoo", 

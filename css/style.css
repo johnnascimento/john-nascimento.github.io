@@ -126,6 +126,10 @@ p{
 /*
 	= Galery adjustments
 ------------------------------------------------*/
+.single-photo-thumbnail{
+	margin-bottom: 25px;
+}
+
 .gallery, .single-photo-thumbnail{
 	box-shadow: 5px 5px 4px #adadad;
     -webkit-box-shadow: 5px 5px 4px #adadad;
@@ -144,10 +148,21 @@ p{
     cursor: pointer;
             transform: translate(0,-3px);
 }
+.single-photo-main-img{
+	margin-bottom: 25px;
+	background-color: transparent;
+    border: none;
+}
+
 .album-thumbnail-hg .thumbnail .caption{
 	height: 200px;
 	overflow-y: hidden;
 	margin-bottom: 35px;
+}
+.single-photo-title{
+	margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 /*
