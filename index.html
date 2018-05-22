@@ -8,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Loading website's favicon icon -->
-    <link rel="icon" type="image/png" href="images/favicon_icon/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon_icon/johns_head.png">
 
     <!-- Loading Jquery, bootstrap and handlebar js -->
     <script src="js/jquery.min.js"></script>
@@ -56,7 +56,7 @@
             <span class="icon-bar"></span>
           </button>
           <a href="#" class="navbar-brand home" id="home" role="Brand"/>
-            <img src="images/favicon_icon/favicon.png" class="img-responsive img-thumbnail img-circle icon-size" alt="John Nascimento's Brand" title"John Nascimento's logo" />
+            <img src="images/favicon_icon/johns_head.png" class="img-responsive img-thumbnail img-circle icon-size" alt="John Nascimento's Brand" title"John Nascimento's logo" />
           </a>
         </div>
 
@@ -67,15 +67,16 @@
             <li class="active home" id="home">
               <a href="#"><span class="sr-only">(current)</span>Home</a>
             </li>
-            <li id="my-projects" class="my-projects dropdown">
-              <a href="#" class="dropdown-toggle" id="ddMprojects" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">My projects<span class="caret"></span></a>
-              <ul class="dropdown-menu" aria-labelledly="ddMprojects">
+            <li id="myprojects" class="my-projects myprojects">
+				<a href="#" id="myprojects">My projects</a>
+              <!--<a href="#" class="dropdown-toggle" id="ddMprojects" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">My projects<span class="caret"></span></a>-->
+              <!--<ul class="dropdown-menu" aria-labelledly="ddMprojects">
                 <li class="divider" role="separator"></li>
                 <li class="webprojects text-center" id="webprojects"><a href="#">Web Design</a></li>
                 <li class="divider" role="separator"></li>
-                <li class="gameprojects disable text-center" id="gameprojects"><a href="#">Game Design</a></li>
+                <li class="gameprojects text-center" id="gameprojects"><a href="#">Game Design</a></li>
                 <li class="divider" role="separator"></li>
-              </ul>
+              </ul>-->
             </li>
             <li class="about-me" id="about-me">
               <a href="#">About me</a>
@@ -301,8 +302,8 @@
     <div class="row bg-2 bg-size">
       <div class="col-xs-12 col-sm-12 col-md-12 text-center">
 	    <div class="caption text-center">
-	      <h3>{{title}}</h3>
-		  <div class="col-xs-12 col-sm-12 col-md-12">
+	      <h3 class="single-photo-title">{{title}}</h3>
+		  <div class="col-xs-12 col-sm-12 col-md-6">
 			<p>{{{description}}}</p>
 		    <p>{{{description2}}}</p>
 			<p>
@@ -311,14 +312,18 @@
 		    {{/if}}
  		   </p>
 		  </div>
-        <img src="{{src}}"class="img-thumbnail img-responsive" id="big-img" />
+		  
+		  <div class="col-xs-12 col-sm-12 col-md-6">
+			<img src="{{src}}"class="img-thumbnail img-responsive single-photo-main-img" id="big-img" />
+		  </div>
       </div> <!-- / col -->
 	  
 	  <div class="col-xs-12 col-sm-12 col-md-12">
           <div class="row">
           {{#if this.moreimgs}}
             {{#each moreimgs}}
-            <div class="col-xs-6 col-sm-3 col-md-3">
+            <div class="col-xs-6 col-sm-6 col-md-3">
+			  <p id="thumbTitle">{{thumbtitle}}</p>
               <img src="{{thumb}}" class="cropImg img-thumbnail single-photo-thumbnail"/>
             </div>
             {{/each}}
@@ -464,8 +469,8 @@
 
     
 
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="https://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
+  <script src="https://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>-->
 
   </body>
 </html>
